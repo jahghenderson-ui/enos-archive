@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete Archive & Documentary of John Michael Enos (1946–1996)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paper: '#FAF6EE',
+                        card: '#F2ECE1',
+                        cardHover: '#E8E0D1',
+                        ink: '#1E1915',
+                        muted: '#5E564E',
+                        terracotta: '#B84A39',
+                        terracottaDark: '#943526',
+                        magenta: '#D1495B',
+                        sage: '#4A6B5D',
+                        sageLight: '#E3ECE8',
+                        gold: '#C59B27',
+                        goldLight: '#F7F0D9',
+                        hairline: '#D8CFC0'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['"Courier Prime"', 'Courier', 'monospace'],
+                        hand: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF6EE;
+            color: #1E1915;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .paper-grain {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+        }
+
+        .interactive-el {
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .interactive-el:active {
+            transform: scale(0.98);
+        }
+
+        .typewriter-page {
+            background-color: #FDFBF7;
+            box-shadow: 0 8px 24px -4px rgba(30, 25, 21, 0.08);
+            border: 1px solid #DED6C6;
+            position: relative;
+        }
+        .typewriter-page::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 24px; bottom: 0;
+            width: 1px;
+            background-color: rgba(184, 74, 57, 0.24);
+            pointer-events: none;
+        }
+
+        .lined-paper {
+            background-color: #FCF9F2;
+            background-image: repeating-linear-gradient(transparent, transparent 29px, #E3DCCB 30px);
+            box-shadow: 0 8px 24px -4px rgba(30, 25, 21, 0.08);
+            border: 1px solid #DED6C6;
+            position: relative;
+        }
+        .lined-paper::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 28px; bottom: 0;
+            width: 1.5px;
+            background-color: rgba(209, 73, 91, 0.28);
+            pointer-events: none;
+        }
+
+        .citation-badge {
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.68rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 2px 7px;
+            border-radius: 4px;
+            background-color: #EAE2D3;
+            color: #3D352E;
+            border: 1px solid #D2C7B4;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: 700;
+        }
+
+        @keyframes kenBurnsSlow {
+            0% { transform: scale(1) translate(0px, 0px); }
+            50% { transform: scale(1.035) translate(-3px, -2px); }
+            100% { transform: scale(1.015) translate(2px, -1px); }
+        }
+        .ken-burns-stage {
+            animation: kenBurnsSlow 18s ease-in-out infinite alternate;
+        }
+
+        @keyframes sceneFadeIn {
+            0% { opacity: 0; transform: translateY(10px) scale(0.99); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .scene-transition {
+            animation: sceneFadeIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(-1deg); }
+            50% { transform: translateY(-5px) rotate(0.5deg); }
+        }
+        .artifact-float {
+            animation: floatSlow 9s ease-in-out infinite;
+        }
+
+        .theater-vignette {
+            background: radial-gradient(circle at 50% 35%, rgba(44, 34, 28, 0.45) 0%, rgba(14, 11, 9, 0.96) 100%);
+        }
+
+        .film-grain-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="paper-grain antialiased selection:bg-terracotta selection:text-white">
+
+    <!-- TOP HEADER BAR -->
+    <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur-md border-b border-hairline shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-2">
+            <button type="button" data-action="scroll-section" data-target="hero-section" class="interactive-el flex items-center gap-3 text-left">
+                <span class="w-3 h-3 rounded-full bg-terracotta inline-block"></span>
+                <div>
+                    <span class="font-mono text-xs uppercase tracking-widest text-ink font-bold block leading-none">J.M. Enos Archive</span>
+                    <span class="font-serif italic text-xs text-muted">Complete Archive & Documentary (1946–1996)</span>
+                </div>
+            </button>
+
+            <nav class="hidden xl:flex items-center gap-1.5">
+                <button type="button" data-action="scroll-section" data-target="module-documentary" class="interactive-el px-3 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider bg-ink text-gold font-bold hover:bg-terracotta hover:text-white flex items-center gap-1.5 shadow-sm">
+                    <span>▶</span> Documentary Film
+                </button>
+                <button type="button" data-action="scroll-section" data-target="module-chronology" class="interactive-el px-2.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-muted hover:text-ink hover:bg-card">
+                    I. 16 Chapters
+                </button>
+                <button type="button" data-action="scroll-section" data-target="module-compass" class="interactive-el px-2.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-muted hover:text-ink hover:bg-card">
+                    II. 1996 Compass
+                </button>
+                <button type="button" data-action="scroll-section" data-target="module-impact" class="interactive-el px-2.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-muted hover:text-ink hover:bg-card">
+                    III. Impact Wall
+                </button>
+                <button type="button" data-action="scroll-section" data-target="module-footprints" class="interactive-el px-2.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-terracotta font-bold hover:text-ink hover:bg-card">
+                    IV. 12 Addresses Map
+                </button>
+                <button type="button" data-action="scroll-section" data-target="module-mentors" class="interactive-el px-2.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-muted hover:text-ink hover:bg-card">
+                    V. Circle of Lives
+                </button>
+                <button type="button" data-action="scroll-section" data-target="module-courses" class="interactive-el px-2.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-muted hover:text-ink hover:bg-card">
+                    VI. Courses
+                </button>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <button type="button" data-action="start-documentary-jump" class="interactive-el xl:hidden text-xs font-mono uppercase tracking-wider px-3 py-1.5 rounded-full bg-ink text-gold font-bold flex items-center gap-1">
+                    <span>▶</span> Film
+                </button>
+                <button type="button" data-action="open-modal" data-modal="jana-modal" class="interactive-el text-xs font-mono uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-terracotta text-white hover:bg-terracottaDark shadow-sm">
+                    For Jana
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero-section" class="relative pt-10 pb-16 md:pt-14 md:pb-20 border-b border-hairline">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-5 mb-8 border-b border-hairline text-xs font-mono text-muted">
+                <div class="flex items-center gap-2">
+                    <span class="px-2.5 py-0.5 rounded bg-ink text-gold font-bold">MASTER EDITION</span>
+                    <span>ALL 5 SCANS INTEGRATED · 183 PAGES · 1946 TO 1996</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="citation-badge">U.S. ARMY MEDIC (VIETNAM)</span>
+                    <span class="citation-badge">M.S. COUNSELING</span>
+                    <span class="citation-badge bg-sageLight text-sage border-sage/30">SACRAMENTO COURTS DIRECTOR</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-goldLight border border-gold/40 text-ink text-xs font-mono uppercase tracking-wider">
+                        <span>✦</span> Biographical Archive & Musical Cinema for Jana
+                    </div>
+
+                    <h1 class="font-serif text-5xl sm:text-7xl font-normal tracking-tight text-ink leading-[0.95]">
+                        The Life & Legacy of<br>
+                        <span class="italic font-semibold text-terracotta">John Michael Enos</span>
+                    </h1>
+
+                    <p class="font-serif italic text-2xl sm:text-3xl text-muted leading-snug">
+                        Combat Medic, Humanist Psychologist, Counselor, Teacher & Public Service Executive (1946–1996)
+                    </p>
+
+                    <div class="p-6 rounded-2xl bg-card border-l-4 border-terracotta relative shadow-sm space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[11px] uppercase tracking-widest text-terracotta font-bold">Philosophy Across Two Decades</span>
+                            <span class="citation-badge">1975 VITA & 1996 SEMINAR</span>
+                        </div>
+                        <p class="font-serif text-xl sm:text-2xl text-ink italic leading-relaxed">
+                            “I see myself as essentially a humanist, and I borrow freely from various perspectives... Feedback serves like a compass that helps a hiker through difficult terrain. Someone once referred to feedback as a gift. Focus on the situation, issue, or behavior—not on the person—and maintain the self-confidence and self-esteem of the person.”
+                        </p>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4">
+                        <button type="button" data-action="start-documentary-jump" class="interactive-el px-6 py-4 rounded-2xl bg-ink text-paper hover:bg-terracotta transition-all shadow-lg flex items-center gap-4 group">
+                            <span class="w-11 h-11 rounded-full bg-gold text-ink flex items-center justify-center text-lg font-bold group-hover:scale-110 transition-transform">▶</span>
+                            <div class="text-left">
+                                <span class="font-mono text-[10px] uppercase tracking-widest text-gold block">12-Chapter Visual Documentary</span>
+                                <span class="font-serif text-xl sm:text-2xl font-semibold block leading-tight">Watch Film: “A Life in Full”</span>
+                            </div>
+                        </button>
+                        <button type="button" data-action="scroll-section" data-target="module-chronology" class="interactive-el px-5 py-4 rounded-2xl bg-card border border-hairline hover:border-terracotta text-ink font-mono text-xs uppercase tracking-wider">
+                            Explore 16-Chapter Timeline ↓
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-card border border-hairline rounded-2xl p-6 shadow-md relative">
+                    <div class="flex items-center justify-between border-b border-hairline pb-3 mb-4">
+                        <div>
+                            <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta font-bold block">Archival Dossier</span>
+                            <h2 class="font-serif text-2xl font-semibold text-ink">6 Eras of John</h2>
+                        </div>
+                        <span class="citation-badge">CLICK TO INSPECT</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 mb-5" id="persona-selector-grid"></div>
+                    <div id="persona-stage" class="rounded-xl bg-paper border border-hairline p-5 transition-all"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE: CINEMATIC DOCUMENTARY THEATER -->
+    <section id="module-documentary" class="py-16 md:py-24 bg-[#14110F] text-[#FAF6EE] border-b-4 border-gold/40 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6 border-b border-white/15 pb-6">
+                <div>
+                    <div class="flex flex-wrap items-center gap-2.5 mb-2">
+                        <span class="px-3 py-0.5 rounded-full bg-gold text-ink font-mono text-xs uppercase font-bold tracking-wider">
+                            ★ Feature Visual Documentary
+                        </span>
+                        <span class="font-mono text-xs text-white/60 uppercase tracking-widest">
+                            12 ILLUSTRATED CHAPTERS · 1946 TO 1996
+                        </span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-6xl text-white tracking-tight">
+                        “Into the Highlands of the Mind”
+                    </h2>
+                    <p class="text-white/75 text-sm sm:text-base max-w-3xl mt-2 leading-relaxed">
+                        A quiet, visual journey through the life, kindness, and enduring legacy of <strong>John Michael Enos</strong>. Press <strong>Play Film</strong> below to let the 12 archival scenes unfold automatically, or step through each memory at your own pace.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2 self-start">
+                    <span class="font-mono text-xs uppercase text-white/60 mr-1">Reading Pace:</span>
+                    <button type="button" data-action="set-doc-pace" data-pace="18000" id="pace-btn-18000" class="interactive-el px-3 py-1.5 rounded-xl bg-white/10 border border-white/15 font-mono text-xs text-white/80 hover:text-white">
+                        Reflective (18s)
+                    </button>
+                    <button type="button" data-action="set-doc-pace" data-pace="14000" id="pace-btn-14000" class="interactive-el px-3 py-1.5 rounded-xl bg-gold text-ink font-bold font-mono text-xs">
+                        Standard (14s)
+                    </button>
+                    <button type="button" data-action="set-doc-pace" data-pace="9000" id="pace-btn-9000" class="interactive-el px-3 py-1.5 rounded-xl bg-white/10 border border-white/15 font-mono text-xs text-white/80 hover:text-white">
+                        Brisk (9s)
+                    </button>
+                </div>
+            </div>
+
+            <div class="rounded-3xl overflow-hidden border-2 border-gold/30 bg-[#0D0B09] shadow-2xl relative film-grain-overlay">
+                <!-- Top Cinema Reel Bar -->
+                <div class="px-6 py-3.5 bg-black/85 border-b border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                    <div class="flex items-center gap-3">
+                        <span id="doc-status-indicator" class="w-2.5 h-2.5 rounded-full bg-white/40 inline-block"></span>
+                        <span id="doc-scene-counter" class="text-gold font-bold tracking-wider">CHAPTER 01 OF 12</span>
+                        <span class="text-white/30">|</span>
+                        <span id="doc-era-badge" class="text-white/90 uppercase tracking-wide">1946–1964 · MARTINEZ & SACRAMENTO</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span id="doc-age-pill" class="px-2.5 py-0.5 rounded bg-terracotta/30 border border-terracotta/50 text-gold text-[11px]">AGE 0 – 17</span>
+                        <span id="doc-citation-pill" class="px-2.5 py-0.5 rounded bg-white/10 text-white/80 text-[11px]">SCAN 04 · P. 3–7</span>
+                    </div>
+                </div>
+
+                <!-- Main Widescreen Visual Stage -->
+                <div class="relative min-h-[540px] sm:min-h-[600px] p-6 sm:p-10 lg:p-14 flex flex-col justify-between theater-vignette overflow-hidden">
+                    <!-- Dynamic Scene Visual & Artifact Reconstruction -->
+                    <div id="doc-visual-stage" class="my-auto z-10"></div>
+
+                    <!-- Lower Cinema Narrative & Caption Box -->
+                    <div class="mt-8 z-20 max-w-5xl mx-auto w-full">
+                        <div class="p-6 sm:p-8 rounded-2xl bg-[#16120F]/95 backdrop-blur-md border border-gold/30 shadow-2xl space-y-4 relative">
+                            <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono uppercase tracking-widest text-gold/90 border-b border-white/10 pb-2.5">
+                                <span id="doc-chapter-kicker">✦ CHAPTER I · THE EARLY YEARS</span>
+                                <span id="doc-touchstone-tag" class="text-white/60">SACRAMENTO SENIOR HIGH SCHOOL</span>
+                            </div>
+                            <p id="doc-caption-text" class="font-serif text-xl sm:text-2xl md:text-[26px] text-[#FAF6EE] leading-relaxed"></p>
+                            <div class="pt-1 flex items-center gap-4">
+                                <div class="flex-1 bg-white/10 h-1.5 rounded-full overflow-hidden">
+                                    <div id="doc-scene-timer-bar" class="bg-gradient-to-r from-terracotta via-gold to-sage h-full transition-all duration-150" style="width: 0%;"></div>
+                                </div>
+                                <span id="doc-playback-hint" class="font-mono text-[10px] uppercase tracking-wider text-white/50 shrink-0">PAUSED · CLICK PLAY OR STEP →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Theater Controls & 12-Chapter Filmstrip -->
+                <div class="p-4 sm:p-6 bg-black/95 border-t border-white/15 space-y-4">
+                    <div class="w-full bg-white/15 h-2 rounded-full overflow-hidden">
+                        <div id="doc-progress-fill" class="bg-gradient-to-r from-terracotta via-gold to-sage h-full transition-all duration-500" style="width: 8.33%;"></div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <button type="button" data-action="doc-prev" class="interactive-el px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase">
+                                ⏮ Prev Chapter
+                            </button>
+                            <button type="button" data-action="doc-play-toggle" id="doc-play-btn" class="interactive-el px-7 py-3 rounded-xl bg-gold text-ink hover:bg-terracotta hover:text-white font-mono text-xs uppercase font-bold tracking-wider flex items-center gap-2.5 shadow-lg">
+                                <span id="doc-play-icon" class="text-sm">▶</span> <span id="doc-play-label">Play Documentary</span>
+                            </button>
+                            <button type="button" data-action="doc-next" class="interactive-el px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase">
+                                Next Chapter ⏭
+                            </button>
+                        </div>
+                        <button type="button" data-action="doc-restart" class="interactive-el text-xs font-mono text-gold hover:underline uppercase tracking-wider">
+                            ↺ Restart from Chapter 01 (1946)
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-12 gap-1.5 pt-2" id="doc-filmstrip-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE I: 16-CHAPTER TIMELINE -->
+    <section id="module-chronology" class="py-20 md:py-24 border-b border-hairline bg-card/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded bg-terracotta text-white font-mono text-xs uppercase font-bold">Module I</span>
+                        <span class="font-mono text-xs text-muted uppercase tracking-wider">16 VERIFIED CHAPTERS (1946–1996)</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink">The Complete Chronology (1946–1996)</h2>
+                </div>
+                <div class="flex items-center gap-2 self-start shrink-0">
+                    <button type="button" data-action="timeline-step" data-dir="-1" class="interactive-el px-3.5 py-2 rounded-xl bg-paper border border-hairline font-mono text-xs hover:border-terracotta">
+                        ← Prev
+                    </button>
+                    <span id="timeline-counter" class="font-mono text-xs px-3 py-2 rounded-xl bg-card border border-hairline font-bold">01 / 16</span>
+                    <button type="button" data-action="timeline-step" data-dir="1" class="interactive-el px-3.5 py-2 rounded-xl bg-ink text-paper font-mono text-xs hover:bg-terracotta">
+                        Next →
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 mb-8" id="timeline-nodes-container"></div>
+            <div id="timeline-drawer" class="bg-paper border border-hairline rounded-2xl p-6 sm:p-10 shadow-sm transition-all"></div>
+        </div>
+    </section>
+
+    <!-- MODULE II: 1996 COMPASS MODEL -->
+    <section id="module-compass" class="py-20 md:py-24 border-b border-hairline bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
+                <div class="lg:col-span-8">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded bg-sage text-white font-mono text-xs uppercase font-bold">Module II</span>
+                        <span class="citation-badge">SCAN 05 · APRIL 1996</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink">“Feedback Serves Like a Compass” (1996)</h2>
+                    <p class="text-muted text-sm sm:text-base mt-2 leading-relaxed">
+                        John’s seminar for court supervisors at the Sacramento Superior & Municipal Courts showing his gentle, humanistic philosophy after 28 years in personnel.
+                    </p>
+                </div>
+                <div class="lg:col-span-4 p-5 rounded-2xl bg-goldLight border border-gold/50 shadow-sm">
+                    <span class="font-mono text-[10px] uppercase tracking-widest text-terracottaDark font-bold block mb-1">John’s Handwritten Margin Note</span>
+                    <p class="font-hand text-2xl text-ink leading-snug">
+                        “Create the right atmosphere: check your attitude... assure privacy... buy a cup of coffee!”
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div class="lg:col-span-5 bg-card border border-hairline rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-mono text-xs uppercase font-bold text-ink">John's 7 Key Actions:</span>
+                        </div>
+                        <div class="space-y-2" id="compass-steps-list"></div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-hairline text-xs font-mono text-muted">
+                        720 9TH ST, SACRAMENTO · APRIL 1996
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 flex flex-col gap-6">
+                    <div id="compass-step-stage" class="lined-paper rounded-2xl p-6 sm:p-8 pl-12 flex-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE III: THE IMPACT WALL -->
+    <section id="module-impact" class="py-20 md:py-24 border-b border-hairline bg-card/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded bg-magenta text-white font-mono text-xs uppercase font-bold">Module III</span>
+                        <span class="font-mono text-xs text-muted uppercase tracking-wider">PRIMARY SOURCE ARTIFACTS</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink">The Impact Wall: Diplomas & Letters</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 mb-8" id="impact-tabs-container"></div>
+            <div id="impact-stage" class="transition-all"></div>
+        </div>
+    </section>
+
+    <!-- MODULE IV: INTERACTIVE ADDRESSES & FOOTPRINTS ATLAS (1946–1996) -->
+    <section id="module-footprints" class="py-20 md:py-24 border-b border-hairline bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+                <div>
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded bg-terracotta text-white font-mono text-xs uppercase font-bold">Module IV</span>
+                        <span class="citation-badge">12 VERIFIED RESIDENTIAL ADDRESSES (1946–1996)</span>
+                        <span class="citation-badge bg-sageLight text-sage border-sage/30">+ 11 WORKPLACES & SCHOOLS</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink">Where John Lived: The Complete Address Atlas</h2>
+                    <p class="text-muted text-sm sm:text-base max-w-3xl mt-2 leading-relaxed">
+                        Across his transcripts, resumes, and VA letters, John recorded <strong>12 distinct residential addresses</strong>—tracing his journey from childhood on 20th Street in Sacramento to shoreline apartments in Alameda, hillside avenues in Albany and San Leandro, oceanfront living at One Surf Way in Monterey, and his return to “E” Street and 57th Street in East Sacramento.
+                    </p>
+                </div>
+
+                <!-- Map Mode & Region Filter Switcher -->
+                <div class="flex flex-wrap items-center gap-1.5 bg-card p-1.5 rounded-2xl border border-hairline self-start shrink-0">
+                    <button type="button" data-action="set-map-view" data-view="homes" id="map-tab-homes" class="interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase font-bold bg-ink text-paper shadow-sm">
+                        🏠 12 Residential Addresses
+                    </button>
+                    <button type="button" data-action="set-map-view" data-view="workplaces" id="map-tab-workplaces" class="interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase text-muted hover:text-ink">
+                        🏛️ 10 Workplaces & Campuses
+                    </button>
+                    <button type="button" data-action="set-map-view" data-view="pink1976" id="map-tab-pink1976" class="interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase text-magenta font-bold hover:bg-magenta/10">
+                        🌸 1976 Pink Brochure Map
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic Interactive Map & Address Dossier Container -->
+            <div id="maps-container"></div>
+        </div>
+    </section>
+
+    <!-- MODULE V: THE CIRCLE OF LIVES (MENTORS, COLLEAGUES & STUDENTS) -->
+    <section id="module-mentors" class="py-20 md:py-24 border-b border-hairline bg-card/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded bg-sage text-white font-mono text-xs uppercase font-bold">Module V</span>
+                        <span class="citation-badge">PEOPLE WHO WALKED BESIDE HIM (1946–1996)</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink">The Circle of Lives: Family, Mentors & Students</h2>
+                    <p class="text-muted text-sm sm:text-base max-w-3xl mt-2 leading-relaxed">
+                        A person’s archive is also a constellation of the people who believed in them and the people they lifted up. Explore the 12 key individuals named across John’s personal files—with their exact roles, addresses, and phone numbers preserved from the scans.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-1.5" id="mentor-filter-bar"></div>
+            </div>
+
+            <div id="mentors-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+        </div>
+    </section>
+
+    <!-- MODULE VI: COURSES & MANAGEMENT TRAINING -->
+    <section id="module-courses" class="py-20 md:py-24 border-b border-hairline bg-card/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">
+                <div>
+                    <span class="px-2.5 py-0.5 rounded bg-ink text-paper font-mono text-xs uppercase font-bold">Module VI</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink mt-2">The Intellectual Tapestry (Courses & Professional Seminars)</h2>
+                </div>
+                <div class="w-full lg:w-72">
+                    <input type="text" id="course-search-input" placeholder="Search courses..." 
+                        class="w-full px-3.5 py-2 rounded-xl bg-paper border border-hairline font-mono text-xs text-ink focus:outline-none focus:border-terracotta">
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-6" id="course-filter-bar"></div>
+            <div id="courses-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-ink text-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-white/50">
+            <div>IN LOVING MEMORY OF JOHN MICHAEL ENOS (JULY 2, 1946 – 1996)</div>
+            <button type="button" data-action="scroll-section" data-target="hero-section" class="interactive-el text-terracotta hover:text-white uppercase">
+                ↑ Return to Top
+            </button>
+        </div>
+    </footer>
+
+    <!-- MODAL FOR JANA -->
+    <div id="jana-modal" class="fixed inset-0 z-50 hidden bg-ink/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-paper text-ink max-w-xl w-full rounded-2xl border border-hairline shadow-2xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center justify-between border-b border-hairline pb-3">
+                <span class="font-mono text-xs uppercase tracking-widest text-terracotta font-bold">Curatorial Dedication</span>
+                <button type="button" data-action="close-modal" data-modal="jana-modal" class="font-mono text-xs text-muted hover:text-ink">CLOSE ✕</button>
+            </div>
+            <h3 class="font-serif text-3xl text-ink">For Jana</h3>
+            <p class="text-sm text-ink/85 leading-relaxed">
+                Across 183 scanned pages spanning 50 years, John's legacy is clear: he gave his heart to helping people become who they had the power to be. Whether running youth programs at 20 or guiding court staff at 49, his empathy was unwavering.
+            </p>
+            <div class="pt-3 border-t border-hairline flex justify-end">
+                <button type="button" data-action="close-modal" data-modal="jana-modal" class="interactive-el px-5 py-2.5 rounded-xl bg-ink text-paper font-mono text-xs uppercase">
+                    Close Note
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT ENGINE -->
+    <script>
+        (function() {
+            'use strict';
+
+            const personasData = [
+                {
+                    id: '1990-96-courts',
+                    shortLabel: '1990–96 · Courts Director',
+                    year: '1990–1996 (Ages 44–50)',
+                    citation: 'SCAN 02 & SCAN 05',
+                    title: 'Personnel Director — Sacramento Courts',
+                    subtitle: '720 Ninth St. & 5413 E Street',
+                    bgClass: 'bg-goldLight border-gold/50',
+                    badgeText: 'Serving 48 Judges & Court Merger',
+                    description: 'John directed the human-resource consolidation of the Sacramento Superior & Municipal Courts, advised 48 Judges, championed employee wellness, and taught his 1996 Compass seminar.'
+                },
+                {
+                    id: '1987-90-monterey',
+                    shortLabel: '1987–90 · Monterey Dir.',
+                    year: '1987–1990 (Ages 41–44)',
+                    citation: 'SCAN 02 · P. 3, 9, 13',
+                    title: 'Assistant & Acting Personnel Director',
+                    subtitle: 'County of Monterey · One Surf Way #237',
+                    bgClass: 'bg-sageLight border-sage/40',
+                    badgeText: '3,000 Employees · $278M Budget',
+                    description: 'Living by the ocean at One Surf Way #237, John managed the county personnel division and served as Acting Director in 1988–89.'
+                },
+                {
+                    id: '1982-87-smud',
+                    shortLabel: '1982–87 · SMUD / Rancho Seco',
+                    year: '1982–1987 (Ages 36–41)',
+                    citation: 'SCAN 02 · P. 3, 9, 26',
+                    title: 'Senior Personnel Analyst (SMUD)',
+                    subtitle: 'Rancho Seco Nuclear Plant · 1300 57th St.',
+                    bgClass: 'bg-goldLight border-gold/40',
+                    badgeText: '1,000 Nuclear Plant Staff',
+                    description: 'Administered classification and pay for 2,000 employees and served on-site as HR supervisor for 1,000 staff at the Rancho Seco Nuclear Power Plant.'
+                },
+                {
+                    id: '1974-82-eastbay',
+                    shortLabel: '1974–82 · East Bay Educator',
+                    year: '1974–1982 (Ages 28–36)',
+                    citation: 'SCAN 01 & SCAN 03',
+                    title: 'Lead Analyst, Counselor & Evening Principal',
+                    subtitle: 'Alameda County & San Leandro Adult School',
+                    bgClass: 'bg-terracotta/20 border-terracotta/40',
+                    badgeText: '1976–77 San Leandro Brochures',
+                    description: 'By day a Lead Analyst rebuilding Alameda County training after Prop 13; by night a counselor, teacher, and evening principal in San Leandro.'
+                },
+                {
+                    id: '1967-69-medic',
+                    shortLabel: '1967–69 · Vietnam Combat Medic',
+                    year: '1967–1969 (Ages 21–23)',
+                    citation: 'SCAN 02 [P. 30] & SCAN 03 [P. 9]',
+                    title: 'U.S. Army Medic & NCO Instructor',
+                    subtitle: 'Fort Sam Houston, TX & Republic of Vietnam',
+                    bgClass: 'bg-sageLight border-sage/50',
+                    badgeText: 'Honorable Discharge · Disabled Vet',
+                    description: 'Trained at Fort Sam Houston, served as an Acting NCO teaching medic classes, and served on the front lines in Vietnam.'
+                },
+                {
+                    id: '1966-playground',
+                    shortLabel: '1964–73 · Dos Rios & Youth Grants',
+                    year: '1964–1973 (Ages 17–27)',
+                    citation: 'SCAN 01 [P. 43–45] & SCAN 03 [P. 38]',
+                    title: 'Playground Leader & Youth Grant Director',
+                    subtitle: 'Dos Rios School & City Manager’s Office',
+                    bgClass: 'bg-goldLight border-gold/40',
+                    badgeText: '10 → 70+ Kids · 313 Youth Placed',
+                    description: 'Rose from Dos Rios playground leader in 1966 to directing city-wide affirmative action youth employment programs in Sacramento.'
+                }
+            ];
+
+            const documentaryScenes = [
+                {
+                    num: '01',
+                    era: '1946 – 1964',
+                    ageLabel: 'Ages 0 – 17',
+                    kicker: 'CHAPTER I · ROOTS & PROMISE',
+                    title: '“Into the Highlands of the Mind”',
+                    location: 'Martinez & 1221 20th St., Sacramento, CA',
+                    citation: 'SCAN 04 · P. 3–7 & SCAN 01 · P. 22',
+                    quote: '“INTO THE HIGHLANDS OF THE MIND LET ME GO”',
+                    quoteSub: '— Sacramento Senior High School Class Motto, January 30, 1964',
+                    narration: 'Born in Martinez on July 2, 1946, and raised on 20th Street in Sacramento by his mother Lois Jean Enos, young “Johnnie” grew up with a quiet curiosity about people and a love for sports, fishing, and the outdoors. On January 30, 1964, at seventeen years old, he graduated from Sacramento Senior High School under a class motto that would become the compass of his entire life: “Into the highlands of the mind let me go.”',
+                    moments: [
+                        'Born July 2, 1946 in Martinez, Contra Costa County',
+                        'Raised at 1221 20th Street in Sacramento alongside his mother, Lois Jean Enos',
+                        'Graduated Jan 30, 1964 from Sacramento Senior High School (“General Activities”)'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FAF6EE] text-[#1E1915] p-6 rounded-2xl border-2 border-[#C59B27] shadow-2xl relative">
+                            <div class="border border-[#1E1915]/20 p-5 rounded-xl text-center space-y-2.5">
+                                <div class="font-mono text-[10px] uppercase tracking-widest text-[#B84A39] font-bold">Original Diploma & Program · Scan 04, p. 4–6</div>
+                                <div class="font-serif text-3xl font-bold tracking-tight text-[#1E1915]">Sacramento Senior High School</div>
+                                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto"></div>
+                                <p class="font-serif italic text-base text-[#5E564E]">“Be it known that <strong>John Enos</strong> has completed satisfactorily the Course of Study prescribed for Graduation...”</p>
+                                <div class="p-2.5 rounded-lg bg-[#F7F0D9] border border-[#C59B27]/50 font-mono text-[11px] font-bold text-[#1E1915]">
+                                    CLASS MOTTO: “INTO THE HIGHLANDS OF THE MIND LET ME GO”
+                                </div>
+                                <div class="flex justify-between items-center pt-2 text-[10px] font-mono text-[#5E564E]">
+                                    <span>JANUARY 30, 1964</span>
+                                    <span>ALBERT J. SESSAREGO, PRINCIPAL</span>
+                                </div>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '02',
+                    era: 'Summer 1966',
+                    ageLabel: 'Age 20',
+                    kicker: 'CHAPTER II · THE DOS RIOS MIRACLE',
+                    title: 'Seventy Children & Four Softball Teams',
+                    location: 'Dos Rios School & Max Baer Park, Sacramento',
+                    citation: 'SCAN 01 · P. 43–45',
+                    quote: '“His efforts have raised the playground attendance from 10 or less to 70 plus... to replace him would Result in a serious demoralizing effect on the children.”',
+                    quoteSub: '— Erling Linggi, General Supervisor of Youth Activities (July 19, 1966)',
+                    narration: 'Working his way through Sacramento City College and San Francisco State, twenty-year-old John was assigned as summer playground leader at Dos Rios School. His warmth was magnetic: daily attendance soared from fewer than ten kids to more than seventy. When over twenty families at nearby Max Baer Park signed a handwritten petition begging the city to make John their park director, the city supervisor wrote back explaining that taking John away from Dos Rios would break the hearts of the neighborhood children and his four softball teams.',
+                    moments: [
+                        'Multiplied daily playground attendance sevenfold: from <10 kids to 70+ children',
+                        'Coached 4 neighborhood youth softball teams at once & led an August craft project',
+                        '20+ neighbors on 35th Avenue signed a handwritten petition asking for John'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float space-y-3">
+                            <div class="bg-[#FCF9F2] text-[#1E1915] p-5 rounded-2xl border border-[#DED6C6] shadow-xl">
+                                <div class="flex justify-between items-center border-b border-[#D8CFC0] pb-1.5 mb-2">
+                                    <span class="font-mono text-[10px] font-bold text-[#B84A39] uppercase">1966 Neighborhood Petition [p. 43]</span>
+                                    <span class="font-mono text-[10px] text-[#5E564E]">20+ Signatures</span>
+                                </div>
+                                <p class="font-hand text-2xl text-[#1E1915] leading-snug">
+                                    “We the undersigned would like to have John Enos as park director at Max Baer Park...”
+                                </p>
+                            </div>
+                            <div class="bg-[#FAF6EE] text-[#1E1915] p-5 rounded-2xl border-l-4 border-[#4A6B5D] shadow-xl font-mono text-xs space-y-2">
+                                <div class="text-[10px] text-[#4A6B5D] font-bold uppercase">City of Sacramento Response · July 19, 1966 [p. 44]</div>
+                                <p class="leading-relaxed text-[11px]">
+                                    “His efforts have raised the playground attendance from <strong>10 or less to 70 plus</strong>... Also, to replace him would be a serious blow to his <strong>softball teams (4 at last count)</strong>.”
+                                </p>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '03',
+                    era: '1967 – 1969',
+                    ageLabel: 'Ages 21 – 23',
+                    kicker: 'CHAPTER III · COURAGE UNDER FIRE',
+                    title: 'U.S. Army Combat Medic in Vietnam',
+                    location: 'Fort Sam Houston, Texas & Republic of Vietnam',
+                    citation: 'SCAN 02 [P. 30] & SCAN 03 [P. 9, 39]',
+                    quote: '“United States Army, Medical Specialist. Served in Viet Nam as a combat medic. At Fort Sam Houston, Texas, completed a leadership school, served as an acting NCO...”',
+                    quoteSub: '— John M. Enos Summary Vita (April 1973) & VA Certification (Jan 14, 1983)',
+                    narration: 'In September 1967, four days after registering for fall classes at Sacramento State, twenty-one-year-old John answered the call to military service. Training at Fort Sam Houston in Texas, he graduated from leadership and instructor schools, serving as an Acting Non-Commissioned Officer teaching fellow medics before deploying to Vietnam as a front-line Combat Medic. He returned home honorably discharged as a service-connected disabled veteran—carrying a lifelong devotion to healing and protecting others.',
+                    moments: [
+                        'Withdrew from college Sept 22, 1967 to serve in the United States Army (1967–1969)',
+                        'Completed Leadership & Instructor Schools at Fort Sam Houston; served as Acting NCO',
+                        'Served in the Republic of Vietnam as a Combat Medic; Honorably Discharged Disabled Veteran'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-gradient-to-br from-[#28362E] to-[#17211B] text-[#FAF6EE] p-6 rounded-2xl border-2 border-[#C59B27]/60 shadow-2xl space-y-4">
+                            <div class="flex items-center justify-between border-b border-white/15 pb-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-[#FAF6EE] flex items-center justify-center text-[#B84A39] font-bold text-xl shadow">✚</div>
+                                    <div>
+                                        <div class="font-mono text-[10px] uppercase tracking-widest text-[#C59B27]">U.S. Army Medical Corps</div>
+                                        <div class="font-serif text-xl font-bold text-white">Combat Medic & NCO Instructor</div>
+                                    </div>
+                                </div>
+                                <span class="font-mono text-[10px] px-2 py-0.5 rounded bg-white/10 text-white/90">1967–1969</span>
+                            </div>
+                            <div class="p-4 rounded-xl bg-black/35 border border-white/10 font-mono text-xs space-y-1.5 text-white/90">
+                                <div class="text-[#C59B27] text-[10px] uppercase font-bold">Veterans Administration · File C 25 084 037 [Scan 02, p. 30]</div>
+                                <p class="text-[11px] leading-relaxed">
+                                    “This is to certify that the records of the VA disclose that you are in receipt of disability compensation on account of wartime service connected disability... discharged under honorable conditions.”
+                                </p>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '04',
+                    era: '1969 – 1973',
+                    ageLabel: 'Ages 23 – 26',
+                    kicker: 'CHAPTER IV · SCHOLAR WITH HONORS',
+                    title: 'Three Straight Dean’s Lists & Master’s Degree',
+                    location: 'California State University, Sacramento',
+                    citation: 'SCAN 01 [P. 1, 19–20] & SCAN 04 [P. 1, 8–10, 12–16]',
+                    quote: '“Bachelor of Arts in Psychology With Honors (June 11, 1971)... Master of Science in Counseling (June 8, 1973).”',
+                    quoteSub: '— Original CSUS Diplomas & Commencement Programs [Scan 04]',
+                    narration: 'Returning to Sacramento State in September 1969 with maturity forged in service, John achieved an extraordinary academic run. He made the Dean’s Honor List three consecutive semesters—earning straight As in Motivation, Psychological Testing, Research Foundations, Renaissance Art, and American Art. After graduating Cum Laude With Honors in 1971, he earned his Master of Science in Counseling in June 1973 with a 3.78 GPA and three lifetime California credentials.',
+                    moments: [
+                        '3× Consecutive CSUS Dean’s Honor List (Fall 1969, Spring 1970, Fall 1970)',
+                        'B.A. in Psychology With Honors, Minor in Social Welfare (June 11, 1971)',
+                        'M.S. in Counseling (3.78 GPA, June 8, 1973) + Lifetime Pupil Personnel & Teaching Credentials'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FAF6EE] text-[#1E1915] p-6 rounded-2xl border-2 border-[#C59B27] shadow-2xl space-y-3 relative">
+                            <div class="flex items-center justify-between border-b border-[#D8CFC0] pb-2">
+                                <span class="font-mono text-[10px] uppercase tracking-widest text-[#B84A39] font-bold">Original Gold-Sealed Diplomas · Scan 04, p. 1 & 10</span>
+                                <span class="px-2 py-0.5 rounded bg-[#F7F0D9] border border-[#C59B27] font-mono text-[10px] font-bold text-[#1E1915]">CUM LAUDE</span>
+                            </div>
+                            <div class="text-center py-2 space-y-1.5">
+                                <div class="font-serif text-xs uppercase tracking-widest text-[#5E564E]">California State University, Sacramento</div>
+                                <div class="font-serif text-2xl sm:text-3xl font-bold text-[#1E1915]">John Michael Enos</div>
+                                <div class="font-serif italic text-lg text-[#B84A39] font-semibold">Bachelor of Arts With Honors (1971)</div>
+                                <div class="font-serif italic text-lg text-[#4A6B5D] font-semibold">Master of Science in Counseling (1973)</div>
+                            </div>
+                            <div class="flex items-center justify-between pt-2 border-t border-[#D8CFC0] font-mono text-[10px] text-[#5E564E]">
+                                <span>3× DEAN'S HONOR LIST</span>
+                                <span>GRADUATE GPA: 3.78</span>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '05',
+                    era: '1971 – 1974',
+                    ageLabel: 'Ages 25 – 28',
+                    kicker: 'CHAPTER V · EMPOWERING DISADVANTAGED YOUTH',
+                    title: '313 Young Lives Placed & Santee Psychologist',
+                    location: 'City of Sacramento & Santee School District, CA',
+                    citation: 'SCAN 02 [P. 27–29] & SCAN 03 [P. 8, 38]',
+                    quote: '“Designed, implemented, and managed 300-position City-wide affirmative action program for economically disadvantaged youth aged 16–25.”',
+                    quoteSub: '— City Manager’s Office / Personnel Department Record [Scan 02, p. 29]',
+                    narration: 'Even while completing his graduate internships in Carmichael and Sacramento, John never stopped lifting up neighborhood youth. He administered a $65,000 federal grant counseling sixty disadvantaged youngsters, served as School Psychologist in Santee (San Diego County), and then designed and directed Sacramento’s city-wide Youth Employment Program—building career ladders and placing 313 economically disadvantaged young people into meaningful jobs and schooling.',
+                    moments: [
+                        'Managed $65,000 Federal Recreation Support Grant for disadvantaged youth (1971–1972)',
+                        'Served as School Psychologist at Extension 220 in Santee School District (1973–1974)',
+                        'Directed Sacramento’s 313-position Affirmative Action Youth Employment Program (1973–1974)'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FAF6EE] text-[#1E1915] p-6 rounded-2xl border border-[#D8CFC0] shadow-2xl space-y-4">
+                            <div class="flex items-center justify-between border-b border-[#D8CFC0] pb-2">
+                                <span class="font-mono text-[10px] uppercase text-[#4A6B5D] font-bold">City of Sacramento · Youth Employment</span>
+                                <span class="citation-badge">SCAN 03 · P. 38</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3 text-center">
+                                <div class="p-3.5 rounded-xl bg-[#F2ECE1] border border-[#D8CFC0]">
+                                    <div class="font-serif text-3xl font-bold text-[#B84A39]">313</div>
+                                    <div class="font-mono text-[10px] uppercase text-[#5E564E] mt-1">Disadvantaged Youth Employed & Counseled</div>
+                                </div>
+                                <div class="p-3.5 rounded-xl bg-[#E3ECE8] border border-[#4A6B5D]/30">
+                                    <div class="font-serif text-3xl font-bold text-[#4A6B5D]">$65,000</div>
+                                    <div class="font-mono text-[10px] uppercase text-[#4A6B5D] mt-1">Federal Neighborhood Youth Grant</div>
+                                </div>
+                            </div>
+                            <p class="font-mono text-[11px] text-[#5E564E] leading-relaxed">
+                                “Objectives included developing career ladders for participants to move into permanent City positions, or to enroll into various schools.” [Scan 02, p. 29]
+                            </p>
+                        </div>
+                    `
+                },
+                {
+                    num: '06',
+                    era: '1974 – 1982',
+                    ageLabel: 'Ages 28 – 36',
+                    kicker: 'CHAPTER VI · THE HUMANIST FACILITATOR',
+                    title: '“Essentially a Humanist” in the East Bay',
+                    location: 'San Leandro Adult School, Chabot College & Alameda',
+                    citation: 'SCAN 01 [P. 3, 24–28] & SCAN 03 [P. 11]',
+                    quote: '“I see myself as essentially a humanist, and I borrow freely from various perspectives... The expected outcomes for participants should relate and lend to daily lives.”',
+                    quoteSub: '— John M. Enos (1975 Vita [Scan 03, p. 11] & 1976 Brochure [Scan 01, p. 28])',
+                    narration: 'Moving to the East Bay in October 1974, John lived by the water in Alameda and in Oakland, Albany, and San Leandro. While working full-time by day as a Lead Personnel Analyst for Alameda County, he gave his evenings to teaching and counseling—teaching Marriage & Family Relations, instructing at Chabot College in Hayward, serving as child psychologist at the Garner Learning Center in Alameda, and leading Humanist-Existential Encounter Groups and Self-Esteem classes in Room 109 at San Leandro Adult School.',
+                    moments: [
+                        'Taught “Psychology—Interpersonal Relations: Raising Self-Esteem” & Encounter Groups [p. 3, 28]',
+                        'Assigned Carl Rogers’ “On Becoming a Person” and a 2-page student “Psychobiography” [p. 24]',
+                        'Also served as Evening Administrator (Acting Principal) at San Leandro Adult School [Scan 02, p. 46]'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#E87A82] text-[#1E1915] p-5 rounded-2xl border-2 border-[#1E1915] shadow-2xl space-y-3">
+                            <div class="flex items-center justify-between border-b border-[#1E1915]/30 pb-2">
+                                <span class="font-mono text-[10px] uppercase font-bold bg-[#1E1915] text-[#FAF6EE] px-2 py-0.5 rounded">Spring 1976 Pink Brochure [p. 27–28]</span>
+                                <span class="font-mono text-[10px] font-bold">SLHS ROOM 109</span>
+                            </div>
+                            <div class="bg-[#FAF6EE] p-4 rounded-xl border border-[#1E1915] space-y-2">
+                                <div class="font-mono text-xs font-bold uppercase text-[#B84A39]">PSYCHOLOGY — INTERPERSONAL RELATIONS: RAISING SELF-ESTEEM</div>
+                                <p class="font-serif italic text-base text-[#1E1915]">
+                                    “Mr. Enos, with degrees in Psychology & Counseling, describes his group as a ‘Humanist-Existential’ model... Focus will be on group members’ feelings as they interact openly and honestly.”
+                                </p>
+                                <div class="font-hand text-xl text-[#943526] font-bold pt-1">
+                                    “GREAT Flyer — I think you should do this again!” [p. 3]
+                                </div>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '07',
+                    era: 'Winter 1977',
+                    ageLabel: 'Age 30',
+                    kicker: 'CHAPTER VII · BURIED DREAMS BROUGHT TO LIGHT',
+                    title: '“Thank You John for Being Who and What You Are”',
+                    location: 'San Leandro High School Library, 2200 Bancroft Ave',
+                    citation: 'SCAN 01 · P. 4, 12–18',
+                    quote: '“The tests brought to the surface inner feelings about career choices that have been buried for a long time... Thank you John for being who and what you are.”',
+                    quoteSub: '— Judi, Adult Student Evaluation (Winter Quarter 1977, Scan 01, p. 12)',
+                    narration: 'In January 1977, John founded San Leandro’s first Career Guidance Center for Adults. Night after night, working adults came to his library sessions after full days on the job. Even when the school’s mimeograph machine printed blurry aptitude tests, John’s students adored him—writing letters to Principal William Drennon praising how John brought in personnel specialists to conduct individual mock interviews and helped them uncover dreams they had buried for years.',
+                    moments: [
+                        'Founded the Adult Career Guidance Center in Winter Quarter 1977 [Scan 01, p. 4]',
+                        'Arranged individual 1-on-1 mock job interviews for every adult student in class [p. 13, 15]',
+                        'Preserved 4 heartfelt student evaluations thanking him for changing their lives [p. 12–18]'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FCF9F2] text-[#1E1915] p-6 rounded-2xl border border-[#DED6C6] shadow-2xl space-y-3">
+                            <div class="flex justify-between items-center border-b border-[#D8CFC0] pb-2 font-mono text-[10px] text-[#5E564E]">
+                                <span>HANDWRITTEN EVALUATION · WINTER 1977</span>
+                                <span class="text-[#B84A39] font-bold">SCAN 01 · P. 12</span>
+                            </div>
+                            <p class="font-hand text-2xl sm:text-3xl text-[#1E1915] leading-snug">
+                                “The tests also were most important, they brought to the surface inner feelings about career choices that have been buried for a long time...”
+                            </p>
+                            <div class="p-3 rounded-xl bg-[#F7F0D9] border-l-4 border-[#B84A39] font-hand text-2xl sm:text-3xl font-bold text-[#943526]">
+                                “Thank you John for being who and what you are.” — Judi
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '08',
+                    era: '1974 – 1982',
+                    ageLabel: 'Ages 28 – 36',
+                    kicker: 'CHAPTER VIII · REBUILDING AFTER PROPOSITION 13',
+                    title: 'Alameda County Lead Analyst & Training Officer',
+                    location: '1221 Oak Street, Oakland, CA',
+                    citation: 'SCAN 02 [P. 4, 38] & SCAN 03 [P. 19–20]',
+                    quote: '“1980–1982: Acting County-wide Training Officer... reinitiated training program abolished with Proposition 13... Currently, I am counseling laid-off ‘Ganned’ employees.”',
+                    quoteSub: '— John M. Enos Letters of Qualification (1978 & Aug 2, 1985)',
+                    narration: 'During his eight years at Alameda County’s Personnel Department on Oak Street in Oakland, John handled recruitment, testing, and labor relations for the 1,000-member Sheriff’s Department and county fire districts. When Proposition 13 budget cuts in 1978 led to painful public-sector layoffs, John personally counseled laid-off county workers to help them find new careers—and from 1980 to 1982, he single-handedly rebuilt Alameda County’s abolished county-wide training program from the ground up.',
+                    moments: [
+                        'Lead Personnel Analyst for Alameda County Sheriff’s Dept (1,000 staff) & Fire Districts',
+                        'Personally counseled laid-off employees after 1978 Prop 13 / Gann limit cuts [Scan 03, p. 19]',
+                        'Rebuilt Alameda County’s abolished county-wide training program from scratch (1980–1982) [Scan 02, p. 38]'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FAF6EE] text-[#1E1915] p-6 rounded-2xl border border-[#D8CFC0] shadow-2xl font-mono text-xs space-y-3">
+                            <div class="flex justify-between items-center border-b border-[#D8CFC0] pb-2">
+                                <span class="text-[#B84A39] font-bold uppercase text-[10px]">Letter to Ms. Giles · Aug 2, 1985 [Scan 02, p. 38]</span>
+                                <span class="citation-badge">OAKLAND, CA</span>
+                            </div>
+                            <div class="font-bold text-[#1E1915]">1980–1982: Acting County-wide Training Officer, Alameda County</div>
+                            <ul class="space-y-1 text-[11px] text-[#5E564E] list-disc pl-4">
+                                <li>Reinitiated training program abolished with Proposition 13</li>
+                                <li>Prepared & evaluated county-wide training needs survey</li>
+                                <li>Partnered with Vista College instructors & built training library</li>
+                                <li>Taught police lieutenants fair interviewing & helped candidates pass exams</li>
+                            </ul>
+                        </div>
+                    `
+                },
+                {
+                    num: '09',
+                    era: '1982 – 1987',
+                    ageLabel: 'Ages 36 – 41',
+                    kicker: 'CHAPTER IX · RETURNING HOME TO SACRAMENTO',
+                    title: 'SMUD & The Rancho Seco Nuclear Plant',
+                    location: '1300 57th Street, Sacramento & Rancho Seco',
+                    citation: 'SCAN 02 · P. 3–4, 9, 11–12, 26',
+                    quote: '“Worked as human resource supervisor at the Rancho Seco Power Plant consisting of 1,000 employees... Administered classification and pay programs for 93 classes and 2,000 employees.”',
+                    quoteSub: '— John M. Enos Resume [Scan 02, p. 3 & 26]',
+                    narration: 'In November 1982, John returned home to Sacramento, living at 1300 57th Street and joining the Sacramento Municipal Utility District (SMUD). Rising rapidly to Senior Classification & Pay Analyst and Senior Personnel Analyst, he managed equitable compensation for 2,000 utility workers across a $66 million payroll—and was tapped to serve on-site as Human Resource Supervisor for the 1,000 employees at the Rancho Seco Nuclear Power Plant during its most intense operational years.',
+                    moments: [
+                        'Managed classification and pay equity for 2,000 SMUD employees across 93 job classes',
+                        'Served on-site as Human Resource Supervisor for 1,000 staff at Rancho Seco Nuclear Plant',
+                        'Completed landmark 55-position Engineering Tech study & 120-position MIS study [Scan 02, p. 4]'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FAF6EE] text-[#1E1915] p-6 rounded-2xl border-2 border-[#4A6B5D]/50 shadow-2xl space-y-3">
+                            <div class="flex justify-between items-center border-b border-[#D8CFC0] pb-2 font-mono text-[10px]">
+                                <span class="font-bold text-[#4A6B5D] uppercase">SMUD Personnel Division · 1982–1987</span>
+                                <span class="citation-badge">SCAN 02 · P. 3, 11</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 text-center py-1">
+                                <div class="p-2.5 rounded-lg bg-[#F2ECE1]">
+                                    <div class="font-serif text-2xl font-bold text-[#1E1915]">1,000</div>
+                                    <div class="font-mono text-[9px] uppercase text-[#5E564E]">Rancho Seco Plant Staff</div>
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-[#F2ECE1]">
+                                    <div class="font-serif text-2xl font-bold text-[#B84A39]">2,000</div>
+                                    <div class="font-mono text-[9px] uppercase text-[#5E564E]">Class & Pay Employees</div>
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-[#F2ECE1]">
+                                    <div class="font-serif text-2xl font-bold text-[#4A6B5D]">$66M</div>
+                                    <div class="font-mono text-[9px] uppercase text-[#5E564E]">District Payroll</div>
+                                </div>
+                            </div>
+                            <p class="font-mono text-[11px] text-[#5E564E] leading-relaxed">
+                                “Successfully met large scale and urgent human resource needs at Rancho Seco while maintaining integrity of the human resource systems.”
+                            </p>
+                        </div>
+                    `
+                },
+                {
+                    num: '10',
+                    era: '1987 – 1990',
+                    ageLabel: 'Ages 41 – 44',
+                    kicker: 'CHAPTER X · BY THE OCEAN IN MONTEREY',
+                    title: 'One Surf Way & Monterey County Director',
+                    location: 'One Surf Way #237, Monterey, CA 93940',
+                    citation: 'SCAN 02 · P. 3, 9, 13–19',
+                    quote: '“Major interests include people, traveling, camping, fishing, basketball, and the beach... Served successfully as Acting Personnel Director from 1988–89.”',
+                    quoteSub: '— John M. Enos Monterey Resume [Scan 02, p. 3 & 9]',
+                    narration: 'On every resume across his life, John listed “the beach, camping, and fishing” among his greatest loves. In August 1987, he fulfilled that dream—moving to One Surf Way, Apartment 237, right on the Monterey coast to serve as Assistant Personnel Director for Monterey County. Overseeing human resources, child-care programs, and affirmative action for 3,000 county employees ($278M county budget), he was appointed Acting Personnel Director by the County Administrator in 1988–1989.',
+                    moments: [
+                        'Lived steps from the waves at One Surf Way #237 in Monterey, California',
+                        'Assistant Personnel Director (1987–1990) & Acting Personnel Director (Dec 1988 – Aug 1989)',
+                        'Supervised training, child-care programs, labor relations & $1.17M division budget for 3,000 employees'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-gradient-to-br from-[#233D47] to-[#15262E] text-[#FAF6EE] p-6 rounded-2xl border-2 border-[#C59B27]/50 shadow-2xl space-y-3">
+                            <div class="flex justify-between items-center border-b border-white/15 pb-2 font-mono text-[10px]">
+                                <span class="text-[#C59B27] uppercase font-bold">🌊 One Surf Way #237 · Monterey, CA</span>
+                                <span class="text-white/70">1987–1990</span>
+                            </div>
+                            <h4 class="font-serif text-2xl font-bold text-white">County of Monterey · Personnel Division</h4>
+                            <p class="font-serif italic text-base text-white/90 leading-relaxed">
+                                “Serving successfully as Acting Personnel Director from 1988–89 at the request of the County Administrator... supervising training and child-care programs for 3,000 county employees.”
+                            </p>
+                            <div class="pt-2 border-t border-white/10 flex justify-between font-mono text-[10px] text-[#C59B27]">
+                                <span>3,000 COUNTY EMPLOYEES</span>
+                                <span>CONSENT DECREE COORDINATOR</span>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '11',
+                    era: '1990 – 1996',
+                    ageLabel: 'Ages 44 – 50',
+                    kicker: 'CHAPTER XI · EXECUTIVE LEADER OF THE COURTS',
+                    title: 'Personnel Director — Sacramento Courts',
+                    location: '720 Ninth St. & 5413 “E” St., Sacramento, CA',
+                    citation: 'SCAN 02 · P. 2, 3, 5–7',
+                    quote: '“Maintaining prompt and professional personnel services to Judges (48 elected officials) and staff... establishing policies and programs that value employee satisfaction and employee wellness.”',
+                    quoteSub: '— John M. Enos 3M Diskette Resume & Cover Letter (October 1993, Scan 02, p. 2–6)',
+                    narration: 'In November 1990, John returned once more to his hometown of Sacramento, living at 5413 “E” Street and taking the helm as Personnel Director (Personnel Officer) for the Sacramento Superior and Municipal Courts at 720 Ninth Street. During a historic and complex merger of the Superior and Municipal Court systems, John guided 48 elected Judges and hundreds of court staff with steady warmth—writing in his 1993 cover letter that his proudest goal was “creating programs that support wellness and recognize employees as a primary asset.”',
+                    moments: [
+                        'Directed the human-resource consolidation of the Sacramento Superior & Municipal Courts',
+                        'Served 48 elected Judges and court staff with “excellent rapport and good relations” [p. 3]',
+                        'Preserved his 1993 3M floppy diskette (“JOHN 1.DOC” & “JOHN 2.DOC”) on page 2 of Scan 02'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FAF6EE] text-[#1E1915] p-6 rounded-2xl border-2 border-[#1E1915] shadow-2xl space-y-3">
+                            <div class="flex items-center justify-between border-b border-[#D8CFC0] pb-2">
+                                <span class="font-mono text-[10px] font-bold uppercase text-[#B84A39]">Sacramento Superior & Municipal Courts</span>
+                                <span class="citation-badge">SCAN 02 · P. 2–7</span>
+                            </div>
+                            <div class="font-serif text-2xl font-bold text-[#1E1915]">Personnel Director · 48 Elected Judges</div>
+                            <p class="font-serif italic text-base text-[#1E1915]/90 leading-relaxed">
+                                “Initiating positive change to the culture of an organization... by creating programs that support wellness and recognize employees as a primary asset.”
+                            </p>
+                            <div class="p-2.5 rounded-lg bg-[#F2ECE1] border border-[#D8CFC0] font-mono text-[10px] text-[#5E564E] flex justify-between">
+                                <span>💾 3M DISK: JOHN 1.DOC (OCT 1993)</span>
+                                <span>5413 "E" ST, SACRAMENTO</span>
+                            </div>
+                        </div>
+                    `
+                },
+                {
+                    num: '12',
+                    era: 'April 1996',
+                    ageLabel: 'Age 49',
+                    kicker: 'CHAPTER XII · THE FINAL SEMINAR & ENDURING LEGACY',
+                    title: '“Feedback Serves Like a Compass & A Gift”',
+                    location: '720 Ninth Street, Room 608, Sacramento',
+                    citation: 'SCAN 05 · P. 1–34 (APRIL 15–17, 1996)',
+                    quote: '“Feedback serves like a compass that helps a hiker through difficult terrain... Someone once referred to feedback as a gift. Focus on the situation, not on the person—and maintain the self-confidence and self-esteem of the person.”',
+                    quoteSub: '— John Enos’s Handwritten Lecture Notes (April 1996, Scan 05, p. 15, 18, 26)',
+                    narration: 'The final dated document across all 183 pages of John’s personal archive is a 34-page training packet and handwritten lecture from April 17, 1996, titled “Addressing Performance Issues: A Communication Model.” Looking back on 28 years in public service, John taught court supervisors that feedback should never tear a person down. In his own cursive handwriting, he wrote: “Feedback serves like a compass that helps a hiker through difficult terrain... check your attitude... buy a cup of coffee... maintain the self-confidence and self-esteem of the person... and end on a positive note!” From the playgrounds of 1966 to the courthouse of 1996, John Michael Enos never stopped believing in the dignity of every human being.',
+                    moments: [
+                        'Reflected on 28 years in public personnel administration across California [Scan 05, p. 13]',
+                        'Handwrote: “Feedback serves like a compass that helps a hiker through difficult terrain” [p. 18]',
+                        'Taught supervisors to “buy a cup of coffee,” protect self-esteem, and “end on a positive note!” [p. 17, 34]'
+                    ],
+                    artifactHtml: `
+                        <div class="artifact-float bg-[#FCF9F2] text-[#1E1915] p-6 rounded-2xl border-2 border-[#C59B27] shadow-2xl space-y-3">
+                            <div class="flex justify-between items-center border-b border-[#D8CFC0] pb-2 font-mono text-[10px]">
+                                <span class="font-bold text-[#B84A39] uppercase">John’s Handwritten Notes · April 1996</span>
+                                <span class="citation-badge">SCAN 05 · P. 15–18, 34</span>
+                            </div>
+                            <p class="font-hand text-2xl sm:text-3xl text-[#1E1915] leading-snug">
+                                “Feedback serves like a compass that helps a hiker through difficult terrain... it guides employees back on track when they stray.”
+                            </p>
+                            <div class="p-3 rounded-xl bg-[#F7F0D9] border-l-4 border-[#4A6B5D] font-hand text-2xl text-[#1E1915]">
+                                “Check your attitude, be sure it’s corrective... assure privacy... buy a cup of coffee! End on a positive note by communicating confidence in their ability!”
+                            </div>
+                        </div>
+                    `
+                }
+            ];
+
+            const timelineData = [
+                { year: 'Jul 2, 1946', label: '1946 · Birth', title: 'Born in Martinez, California', loc: 'Martinez, CA', cit: 'SCAN 01 [P. 19]', text: 'Born in Martinez and raised in Sacramento by Lois Jean Enos.' },
+                { year: 'Jan 30, 1964', label: 'Jan ’64 · High School', title: 'Sacramento Senior High School Diploma', loc: 'Sacramento, CA', cit: 'SCAN 04 [P. 3–7]', text: 'Graduated under the class motto: “Into the highlands of the mind let me go.”' },
+                { year: '1964–1965', label: '1964–65 · Sac City', title: 'Sacramento City College (“Johnnie M. Enos”)', loc: 'Sacramento, CA', cit: 'SCAN 01 [P. 22]', text: 'Earned As in sociology, algebra, and community health while working as a recreation leader.' },
+                { year: '1965–1967', label: '1965–67 · SF State', title: 'San Francisco State College', loc: 'San Francisco, CA', cit: 'SCAN 01 [P. 39]', text: 'Completed 48 units in social psychology, crafts for recreation leaders, and social work.' },
+                { year: 'Jul 19, 1966', label: 'Summer ’66 · Dos Rios', title: 'Dos Rios Miracle & Neighborhood Petition', loc: 'Sacramento, CA', cit: 'SCAN 01 [P. 43–45]', text: 'Raised attendance from 10 to 70+ kids; 20+ neighbors petitioned to keep him.' },
+                { year: '1967–1969', label: '1967–69 · Vietnam Medic', title: 'U.S. Army Combat Medic & NCO Instructor', loc: 'Ft. Sam Houston & Vietnam', cit: 'SCAN 02 [P. 30]', text: 'Trained at Fort Sam Houston; served as Acting NCO instructor and combat medic in Vietnam.' },
+                { year: 'Jun 11, 1971', label: 'Jun ’71 · B.A. Honors', title: 'B.A. Psychology With Honors (3× Dean’s List)', loc: 'CSU Sacramento', cit: 'SCAN 04 [P. 1]', text: 'Graduated Cum Laude with a minor in Social Welfare after 3 straight Dean’s List terms.' },
+                { year: 'Jun 8, 1973', label: 'Jun ’73 · M.S. Degree', title: 'Master of Science in Counseling', loc: 'CSU Sacramento', cit: 'SCAN 04 [P. 10]', text: 'Completed M.S. in Counseling (3.78 GPA) and lifetime California Pupil Personnel Credential.' },
+                { year: '1973–1974', label: '1973–74 · Santee & Sac', title: 'School Psychologist & 313 Youth Jobs', loc: 'Santee & Sacramento', cit: 'SCAN 02 [P. 29]', text: 'Served as psychologist in Santee and managed Sacramento’s 313-position affirmative action youth grant.' },
+                { year: '1974–1982', label: '1974–82 · East Bay', title: 'Chabot, Garner Center & San Leandro Principal', loc: 'East Bay, CA', cit: 'SCAN 01 & SCAN 04', text: 'Taught at Chabot, served as school psychologist for Garner Center, and served as Evening Principal.' },
+                { year: '1974–1982', label: '1974–82 · Alameda Co.', title: 'Lead Analyst & Prop 13 Training Officer', loc: '1221 Oak St, Oakland', cit: 'SCAN 02 [P. 38]', text: 'Handled Sheriff & Fire personnel and rebuilt county training from scratch after Proposition 13.' },
+                { year: 'Jan 14, 1983', label: 'Jan ’83 · VA Record', title: 'VA Certified Wartime Service Disability', loc: 'Sacramento & SF VA', cit: 'SCAN 02 [P. 30]', text: 'Official Veterans Administration certification of honorable discharge and service-connected disability.' },
+                { year: '1982–1987', label: '1982–87 · SMUD & Nuclear', title: 'Senior Analyst & Rancho Seco HR Supervisor', loc: 'Rancho Seco Plant', cit: 'SCAN 02 [P. 3]', text: 'Managed SMUD compensation across 93 job classes and supervised HR for 1,000 nuclear plant staff.' },
+                { year: '1987–1990', label: '1987–90 · Monterey Co.', title: 'Assistant & Acting Personnel Director', loc: 'One Surf Way, Monterey', cit: 'SCAN 02 [P. 3]', text: 'Lived steps from the ocean while managing personnel for 3,000 Monterey County employees.' },
+                { year: '1990–1996', label: '1990–96 · Courts Director', title: 'Personnel Director — Sacramento Courts', loc: '720 Ninth St, Sacramento', cit: 'SCAN 02 [P. 3]', text: 'Directed historic court consolidation and served 48 elected judges with compassion.' },
+                { year: 'Apr 17, 1996', label: 'Apr ’96 · Compass Model', title: '“Feedback Serves Like a Compass” Seminar', loc: 'Sacramento Courts', cit: 'SCAN 05 [P. 1–34]', text: 'His 1996 seminar teaching court managers that feedback is a compass and a gift of growth.' }
+            ];
+
+            const compassStepsData = [
+                { num: 'Step 1', title: '1. State Constructive Purpose', slide: 'Clearly indicate why you are meeting.', note: '“Feedback serves like a compass that helps a hiker through difficult terrain... check your attitude, be sure it’s corrective... buy a cup of coffee!”' },
+                { num: 'Step 2', title: '2. Be Specific (Facts, Not Rumors)', slide: 'Be specific — state facts and basis for concerns.', note: '“Focus on the situation, issue, or behavior, NOT on the person. Maintain self-confidence and self-esteem. Avoid a laundry list of negatives.”' },
+                { num: 'Step 3', title: '3. Describe Impact on the Team', slide: 'Indicate impact on organization and coworkers.', note: '“Describe reactions or consequences... most people benefit from seeing themselves from another’s perspective.”' },
+                { num: 'Step 4', title: '4. Get Employee’s Reaction', slide: 'Give the other person an opportunity to respond.', note: '“Allowing the person a chance to react builds self-esteem... simply remain silent or ask an open question: ‘What do you think?’”' },
+                { num: 'Step 5', title: '5. Work Together on a Plan', slide: 'Work together to make things better.', note: '“Ask for their suggestions first, then offer supervisor suggestions. Feedback is only constructive if the purpose is to make things better.”' },
+                { num: 'Step 6', title: '6. Close on a Positive Note', slide: 'Review agreements and close on a positive note.', note: '“Say: ‘At least we understand each other better.’ End on a positive note by communicating confidence in their ability to improve!”' },
+                { num: 'Step 7', title: '7. Follow Up & Support', slide: 'Conduct follow-up meetings and continue support.', note: '“‘In the meantime, I am here to help and support you, if you need anything.’ Someone once referred to feedback as a gift.”' }
+            ];
+
+            const impactArtifacts = [
+                { id: '1966-pet', title: '1966 Petition', date: 'July 1966', cit: 'SCAN 01 [P. 43]', head: 'Max Baer Park Handwritten Petition', body: 'Over 20 neighbors signed a petition asking Sacramento to assign 20-year-old John as their park director.' },
+                { id: '1966-let', title: '1966 City Letter', date: 'July 19, 1966', cit: 'SCAN 01 [P. 44]', head: 'City of Sacramento Official Letter', body: 'Supervisor Erling Linggi declined the transfer because John had grown attendance at Dos Rios from 10 to 70+ kids.' },
+                { id: '1964-hs', title: '1964 Diploma', date: 'Jan 30, 1964', cit: 'SCAN 04 [P. 4]', head: 'Sacramento Senior High School', body: 'Original diploma and commencement program: “Into the highlands of the mind let me go.”' },
+                { id: '1971-ba', title: '1971 B.A. Honors', date: 'June 11, 1971', cit: 'SCAN 04 [P. 1]', head: 'B.A. in Psychology With Honors', body: 'Sacramento State diploma signed by Governor Ronald Reagan with gold collegiate seal.' },
+                { id: '1973-ms', title: '1973 M.S. Degree', date: 'June 8, 1973', cit: 'SCAN 04 [P. 10]', head: 'Master of Science in Counseling', body: 'Conferred by CSU Sacramento School of Education, accompanied by his lifetime California Pupil Personnel Credential.' },
+                { id: '1977-let', title: '1977 Student Letters', date: 'Winter 1977', cit: 'SCAN 01 [P. 12]', head: 'Student Evaluations from San Leandro', body: '“The tests brought to the surface inner feelings about career choices buried for a long time... Thank you John for being who and what you are.”' },
+                { id: '1983-va', title: '1983 VA Record', date: 'Jan 14, 1983', cit: 'SCAN 02 [P. 30]', head: 'VA Certification of Wartime Service', body: 'Official letter from SF Veterans Administration confirming honorable discharge and wartime combat medic service.' },
+                { id: '1993-dsk', title: '1993 Floppy Disk', date: 'Oct 1993', cit: 'SCAN 02 [P. 2]', head: '3M Diskette Copied on Glass', body: 'John’s 3M floppy disk containing `JOHN 1.DOC` and cover letter highlighting programs that support employee wellness.' }
+            ];
+
+            // ALL 12 VERIFIED RESIDENTIAL ADDRESSES OF JOHN MICHAEL ENOS (1946–1996)
+            const residentialAddresses = [
+                {
+                    num: '01',
+                    era: 'Jul 2, 1946',
+                    region: 'BAY AREA',
+                    street: 'Martinez, Contra Costa County, CA',
+                    city: 'Martinez, CA',
+                    phone: 'Birthplace Record',
+                    citation: 'SCAN 01 · P. 19, 20, 37',
+                    cx: 132, cy: 185,
+                    roleAtTime: 'Birthplace of John Michael Enos',
+                    story: 'Every official transcript from Sacramento State University records “BIRTHPLACE: Martinez, Calif. · DATE OF BIRTH: 7-2-46” before his family settled in Sacramento.'
+                },
+                {
+                    num: '02',
+                    era: '1964 – 1967',
+                    region: 'SACRAMENTO',
+                    street: '1221 20th Street (Apt.) & 2222 20th Street',
+                    city: 'Sacramento, CA',
+                    phone: 'With Mother Lois Jean Enos',
+                    citation: 'SCAN 01 · P. 22, 39, 40',
+                    cx: 168, cy: 148,
+                    roleAtTime: ' Sacramento Sr. High & Sac City College Student (“Johnnie M. Enos”)',
+                    story: 'John’s youth and college home in Midtown Sacramento. His Sacramento City College permanent record lists his address as 1221 20th Street and his parent/guardian as Lois Jean Enos at 2222 20th Street. His SF State transcript (p. 39) also records 1221 20th St. when he transferred in Sept 1965.'
+                },
+                {
+                    num: '03',
+                    era: '1971 – 1973',
+                    region: 'SACRAMENTO',
+                    street: '2632 57th Street',
+                    city: 'Sacramento, CA 95817',
+                    phone: '(916) 457-3180',
+                    citation: 'SCAN 01 [P. 1] & SCAN 03 [P. 8, 36]',
+                    cx: 186, cy: 156,
+                    roleAtTime: 'CSUS Master’s Candidate & Federal Youth Grant Coordinator',
+                    story: 'John’s first home on 57th Street in East Sacramento! Listed on his Spring 1972 CSUS Grade Report (3.78 GPA) and his April 1973 Summary Vita while he was completing his M.S. in Counseling, interning as a School Psychologist in Carmichael, and directing the $65,000 Federal Recreation Support Grant.'
+                },
+                {
+                    num: '04',
+                    era: 'Early 1974',
+                    region: 'SACRAMENTO',
+                    street: '1805 10th Street, Apt. 10',
+                    city: 'Sacramento, CA 95814',
+                    phone: '(916) 446-5909',
+                    citation: 'SCAN 03 · P. 36',
+                    cx: 162, cy: 152,
+                    roleAtTime: 'City of Sacramento Personnel Analyst & Chapman College Instructor',
+                    story: 'On page 36 of Scan 3, John crossed out 2632 57th Street by hand and wrote in “1805 10th St., Apt. 10 · 446-5909” right after returning from Santee in February 1974 to join the City of Sacramento Personnel Department and teach a course in “Testing” at Chapman College.'
+                },
+                {
+                    num: '05',
+                    era: 'Spring – Fall 1974',
+                    region: 'SACRAMENTO',
+                    street: '2700 “T” Street, #4',
+                    city: 'Sacramento, CA 95816',
+                    phone: '(916) 451-5679',
+                    citation: 'SCAN 03 · P. 38',
+                    cx: 174, cy: 154,
+                    roleAtTime: 'Coordinator of 313-Youth Employment Program & Hiram Johnson Teacher',
+                    story: 'Typed on his 1974 Recreation & Personnel resume (with handwritten notes about “School districts, Lake, Las Vegas” in the top margin) while managing the 313-position disadvantaged youth program and teaching “Marriage & Family Relations” at Hiram Johnson Adult School.'
+                },
+                {
+                    num: '06',
+                    era: '1974 – 1976',
+                    region: 'BAY AREA',
+                    street: '2550 Frances Street',
+                    city: 'Oakland, CA 94601',
+                    phone: '(415) 535-1806',
+                    citation: 'SCAN 01 [P. 23, 36] & SCAN 03 [P. 10, 12, 35]',
+                    cx: 112, cy: 202,
+                    roleAtTime: 'Alameda County Personnel Analyst & Chabot College Instructor',
+                    story: 'John’s first East Bay address after moving from Sacramento in October 1974 to join Alameda County Personnel. From Frances Street in Oakland, he commuted to 1221 Oak Street, taught at Chabot College in Hayward, and earned an “A” at UC Berkeley Extension in Spring 1976.'
+                },
+                {
+                    num: '07',
+                    era: '1976 – 1978',
+                    region: 'BAY AREA',
+                    street: '2445 Shoreline Drive, #127',
+                    city: 'Alameda, CA 94501',
+                    phone: '(415) 865-5166',
+                    citation: 'SCAN 02 [P. 43] & SCAN 03 [P. 28, 29, 31]',
+                    cx: 106, cy: 208,
+                    roleAtTime: 'School Psychologist (Garner Center & AUSD) & San Leandro Facilitator',
+                    story: 'True to his lifelong love of “the beach,” John lived right on the water at 2445 Shoreline Drive #127 overlooking the bay in Alameda! While living here, he founded the San Leandro Adult Career Center (1977) and served as psychologist for the Garner Learning Center and Alameda Unified School District.'
+                },
+                {
+                    num: '08',
+                    era: '1978 – 1979',
+                    region: 'BAY AREA',
+                    street: '1075 Kains Avenue',
+                    city: 'Albany, CA 94706',
+                    phone: '(415) 526-4298',
+                    citation: 'SCAN 03 · P. 14, 16, 20, 21, 23, 28',
+                    cx: 108, cy: 192,
+                    roleAtTime: 'Lead Personnel Analyst & Counselor to “Ganned” Laid-Off Workers',
+                    story: 'On page 28 of Scan 3, John crossed out 2445 Shoreline Drive by hand and wrote in “1075 Kains Ave, Albany, CA 94706.” From this quiet street near Marin Ave in Albany, he wrote his November 8, 1978 letter to Bob Teemer about counseling employees laid off after Prop 13.'
+                },
+                {
+                    num: '09',
+                    era: '1979 – 1980',
+                    region: 'BAY AREA',
+                    street: '2090 Artic Drive',
+                    city: 'San Leandro, CA 94577',
+                    phone: '(415) 351-4887 & 562-8624',
+                    citation: 'SCAN 01 [P. 42] & SCAN 03 [P. 2, 6]',
+                    cx: 118, cy: 214,
+                    roleAtTime: 'Acting Alameda County Training Coordinator & San Leandro Counselor',
+                    story: 'Featured on his October 1979 resume (Scan 3, p. 2–3) and on the mailing label from Catherine Mumma at San Juan Unified School District (Scan 1, p. 42). Here he began serving as Acting County-wide Training Coordinator for Alameda County.'
+                },
+                {
+                    num: '10',
+                    era: '1980 – Nov 1982',
+                    region: 'BAY AREA',
+                    street: '685 Durant Avenue',
+                    city: 'San Leandro, CA 94577',
+                    phone: '(415) 562-8624',
+                    citation: 'SCAN 01 [P. 35], SCAN 02 [P. 45] & SCAN 03 [P. 4]',
+                    cx: 122, cy: 210,
+                    roleAtTime: 'Evening Principal (San Leandro Adult School) & Co-Partner, Enos-Terzian',
+                    story: 'Located right on the border of East Oakland and San Leandro. While living at 685 Durant Ave, John served as Evening Administrator (Acting Principal) at San Leandro Adult School, co-founded Enos-Terzian Personnel Consultants (1979–83), rebuilt Alameda County’s Prop 13 training program, and took Management classes at Vista College (Spring 1982).'
+                },
+                {
+                    num: '11',
+                    era: 'Jan 1983',
+                    region: 'SACRAMENTO',
+                    street: '1100 Howe Avenue, #460',
+                    city: 'Sacramento, CA 95825',
+                    phone: 'VA Certification Address',
+                    citation: 'SCAN 02 · P. 30',
+                    cx: 192, cy: 146,
+                    roleAtTime: 'Newly Appointed Personnel Analyst II at SMUD',
+                    story: 'When John first moved back to Sacramento from the East Bay in November 1982 to join SMUD, he stayed at 1100 Howe Avenue #460—the address recorded on his official January 14, 1983 Veterans Administration wartime disability certification letter.'
+                },
+                {
+                    num: '12',
+                    era: '1983 – 1987',
+                    region: 'SACRAMENTO',
+                    street: '1300 57th Street',
+                    city: 'Sacramento, CA 95819',
+                    phone: '(916) 456-4194',
+                    citation: 'SCAN 02 · P. 26, 28, 34, 36, 39, 41, 45, 47',
+                    cx: 184, cy: 154,
+                    roleAtTime: 'SMUD Senior Classification Analyst & Rancho Seco HR Supervisor',
+                    story: 'Notice how much John loved 57th Street in East Sacramento! After living at 2632 57th St in grad school (1971–73), he moved into 1300 57th Street in 1983 (crossing out 685 Durant Ave by hand on Scan 2, p. 45) and lived here throughout his five years at SMUD and Rancho Seco.'
+                },
+                {
+                    num: '13',
+                    era: 'Aug 1987 – Nov 1990',
+                    region: 'MONTEREY',
+                    street: 'One Surf Way, #237',
+                    city: 'Monterey, CA 93940',
+                    phone: '(408) 649-3275',
+                    citation: 'SCAN 02 · P. 9, 19, 22, 24',
+                    cx: 116, cy: 292,
+                    roleAtTime: 'Assistant & Acting Personnel Director, County of Monterey',
+                    story: 'Perhaps the most poetic address in the entire archive: One Surf Way #237, nestled right beside Del Monte Beach and the Monterey waves. For a man who wrote on every resume that his favorite things were “people, camping, fishing, and the beach,” living at One Surf Way while leading Monterey County HR was a dream come true.'
+                },
+                {
+                    num: '14',
+                    era: 'Nov 1990 – 1996',
+                    region: 'SACRAMENTO',
+                    street: '5413 “E” Street',
+                    city: 'Sacramento, CA 95819',
+                    phone: '(916) 737-0862',
+                    citation: 'SCAN 02 · P. 3, 5, 7',
+                    cx: 180, cy: 150,
+                    roleAtTime: 'Personnel Director — Sacramento Superior & Municipal Courts',
+                    story: 'John’s final home in East Sacramento—just blocks from 57th Street where he had lived in the 1970s and 1980s. From 5413 “E” Street, he commuted to the courthouse at 720 Ninth Street, serving 48 elected Judges and writing his 1993 cover letter and 1996 “Feedback Serves Like a Compass” seminar.'
+                }
+            ];
+
+            // 10 KEY WORKPLACES & CAMPUSES ACROSS CALIFORNIA & TEXAS/VIETNAM
+            const workplacesList = [
+                { num: 'W1', era: '1966–1974', name: 'Dos Rios School Playground & Sacramento Recreation Dept.', address: '3520 5th Ave & 915 I Street, Sacramento', citation: 'SCAN 01 [P. 44] & SCAN 03 [P. 38]', desc: 'Where 20-year-old John raised attendance from 10 to 70+ kids, coached 4 softball teams, and later directed the $65,000 Federal Youth Grant and 313-position Youth Employment Program.' },
+                { num: 'W2', era: '1967–1969', name: 'Fort Sam Houston (Texas) & Republic of Vietnam', address: 'U.S. Army Medical Corps', citation: 'SCAN 02 [P. 30] & SCAN 03 [P. 9]', desc: 'Completed Army Leadership & Instructor Schools at Fort Sam Houston, served as Acting NCO teaching medic classes, and deployed to Vietnam as a Combat Medic.' },
+                { num: 'W3', era: '1969–1973', name: 'California State University, Sacramento (CSUS)', address: '6000 J Street, Sacramento, CA 95819', citation: 'SCAN 04 · P. 1, 10', desc: 'Earned 3 consecutive Dean’s Honor Lists, B.A. in Psychology With Honors (1971), and M.S. in Counseling (1973) under Professors Ted Taylor and James Saum.' },
+                { num: 'W4', era: '1972–1973', name: 'San Juan Unified & Sacramento City Unified Internships', address: '3738 Walnut Ave, Carmichael & 2991 Land Park Dr, Sacramento', citation: 'SCAN 03 · P. 9', desc: 'Completed clinical internships as School Psychologist (with Dr. Harold Eilersen & Steve Volmer), Psychometrist (with Jerry Marquart), and Counselor at California Jr. High (with Marjorie Cupp & Principal Stratis Zampathis).' },
+                { num: 'W5', era: '1973–1974', name: 'Santee School District (Psychological Services)', address: 'P.O. Box 220, Santee, CA 92071 (Ext. 220)', citation: 'SCAN 01 [P. 2] & SCAN 02 [P. 4]', desc: 'Served as School Psychologist & Psychometrist across 10 elementary/junior high schools in San Diego County.' },
+                { num: 'W6', era: '1974–1982', name: 'Alameda County Personnel Department', address: '1221 Oak Street, Oakland, CA', citation: 'SCAN 02 [P. 4, 38] & SCAN 03 [P. 3]', desc: 'Lead Personnel Analyst for the 1,000-member Sheriff’s Dept & Fire Districts, and Acting County-wide Training Officer (1980–82) who rebuilt the training program abolished after Prop 13.' },
+                { num: 'W7', era: '1975–1982', name: 'San Leandro Adult School, Chabot College & Garner Center', address: '2200 Bancroft Ave, San Leandro & Hayward/Alameda', citation: 'SCAN 01 & SCAN 02 [P. 46]', desc: 'Taught Interpersonal Relations & Self-Esteem, founded the Adult Career Center, served as Evening Administrator (Principal), taught at Chabot College, and tested children at Garner Learning Center.' },
+                { num: 'W8', era: '1982–1987', name: 'SMUD & Rancho Seco Nuclear Power Plant', address: '6201 S Street & Herald, Sacramento County, CA', citation: 'SCAN 02 · P. 3, 9, 11, 26', desc: 'Senior Classification & Pay Analyst for 2,000 employees ($66M payroll) and on-site Human Resource Supervisor for 1,000 employees at the Rancho Seco Nuclear Plant.' },
+                { num: 'W9', era: '1987–1990', name: 'County of Monterey — Personnel Division', address: 'Salinas / Monterey, CA (Work: 408-755-5116)', citation: 'SCAN 02 · P. 3, 9, 13–18', desc: 'Assistant Personnel Director & Acting Personnel Director (1988–89) overseeing a $1.17M division budget, labor negotiations, and HR for 3,000 county employees.' },
+                { num: 'W10', era: '1990–1996', name: 'Sacramento Superior & Municipal Courts', address: '720 Ninth Street, Room 608, Sacramento, CA 95814', citation: 'SCAN 02 [P. 3] & SCAN 05 [P. 12]', desc: 'Personnel Director managing the historic merger of the Superior & Municipal Courts, advising 48 elected Judges, and presenting his April 1996 Supervisory Communication Model.' }
+            ];
+
+            // 11 SITES ON THE VINTAGE 1976/1977 PINK SAN LEANDRO BROCHURE MAP (Scan 1, p. 11 & 34)
+            const pinkBrochureSites = [
+                { num: 1, name: 'San Leandro High School (John’s Base)', address: '2200 Bancroft Avenue', cx: 262, cy: 122, note: 'Where John taught Psychology—Interpersonal Relations in Room 109, coordinated the Career Guidance Center in the SLHS Library, and served as Evening Principal [Scan 01, p. 4, 7, 30; Scan 02, p. 46].' },
+                { num: 2, name: 'John Muir Jr. High School', address: '1444 Williams Street', cx: 215, cy: 218, note: 'Site for Piloting & Seamanship navigation classes in the Muir Library [Scan 01, p. 7].' },
+                { num: 3, name: 'Pacific High School', address: '1201 Marina Blvd.', cx: 315, cy: 278, note: 'Site for Accounting, Income Tax Preparation, Typing, and Auto Mechanics [Scan 01, p. 4, 7, 8].' },
+                { num: 4, name: 'Bancroft Jr. High School', address: '1250 Bancroft Avenue', cx: 162, cy: 132, note: 'Where Don Todd taught Tiffany & Stained Glass in Room S-2 [Scan 01, p. 5, 7, 33].' },
+                { num: 5, name: 'San Leandro Library Center', address: '300 Estudillo Avenue', cx: 164, cy: 168, note: 'Where Librarian Barbara Tierney taught “Using Your Library” alongside Fine Arts Oil Painting & ESL [Scan 01, p. 7, 10, 28].' },
+                { num: 6, name: 'First Methodist Church', address: '1600 Bancroft Avenue', cx: 212, cy: 128, note: 'Hosted daytime Pattern Adjustment, Dressmaking, and Pants Classes [Scan 01, p. 8, 31].' },
+                { num: 7, name: 'Farrelly Building', address: '864 Dutton Avenue', cx: 88, cy: 128, note: 'Hosted Custom Tailoring, Pattern Making, and Knitting [Scan 01, p. 8, 31].' },
+                { num: 8, name: 'Donohue Memorial Building', address: '2960 Merced Street', cx: 365, cy: 332, note: 'Trade Extension center for Plumbing Apprenticeships, Journeyman Welding, and Roofing [Scan 01, p. 8, 31].' },
+                { num: 9, name: 'San Leandro Unified Schools HQ', address: '451 W. Joaquin Avenue', cx: 158, cy: 204, note: 'District headquarters under Superintendent L.E. Holden and Adult School Principal William R. Drennon [Scan 01, p. 11, 34].' },
+                { num: 10, name: 'Broadmoor Nursery School', address: '633 Cary Drive', cx: 106, cy: 106, note: 'Cooperative Nursery School & Parent Education program [Scan 01, p. 5, 7, 31].' },
+                { num: 11, name: 'Americana Beauty Academy', address: '1285 Hays Street', cx: 158, cy: 222, note: '1,600-hour Cosmetology state board licensing program [Scan 01, p. 6, 8, 31].' }
+            ];
+
+            // MODULE V: THE CIRCLE OF LIVES (12 KEY PEOPLE IN JOHN'S ARCHIVE)
+            const circleOfLives = [
+                {
+                    name: 'Lois Jean Enos',
+                    role: 'Mother & Early Anchor',
+                    era: '1946–1967+',
+                    category: 'FAMILY & YOUTH',
+                    contact: '1221 20th St. & 2222 20th St., Sacramento',
+                    citation: 'SCAN 01 · P. 22 & 40',
+                    quote: 'Listed as Parent/Guardian on young “Johnnie M. Enos’s” Sacramento City College permanent record.',
+                    bio: 'Raised John in Midtown Sacramento on 20th Street as he graduated from Sacramento Senior High School in Jan 1964 and worked his way through college.'
+                },
+                {
+                    name: 'Erling Linggi',
+                    role: 'General Supervisor & Asst. Director of Recreation & Parks',
+                    era: '1966–1975+',
+                    category: 'MENTORS',
+                    contact: '3520 5th Ave, Sacramento · (916) 452-5681',
+                    citation: 'SCAN 01 [P. 44–45] & SCAN 03 [P. 9, 11]',
+                    quote: '“His efforts have raised the playground attendance from 10 or less to 70 plus... to replace him would Result in a serious demoralizing effect on the children.”',
+                    bio: 'Wrote the famous July 19, 1966 letter keeping 20-year-old John at Dos Rios School, and remained one of John’s proudest professional references a decade later.'
+                },
+                {
+                    name: 'William Robinson & Mrs. Minnie Jackson',
+                    role: 'Max Baer Park Neighborhood Organizers',
+                    era: 'July 1966',
+                    category: 'STUDENTS & COMMUNITY',
+                    contact: '7812 35th Ave & 7401 35th Ave, Sacramento',
+                    citation: 'SCAN 01 · P. 43–44',
+                    quote: '“We the undersigned would like to have John Enos as park director at Max Baer Park.” (20+ Signatures)',
+                    bio: 'Went door-to-door along 35th Avenue in South Sacramento gathering signatures to petition the City to assign 20-year-old John to their neighborhood park.'
+                },
+                {
+                    name: 'Ted Taylor, Ph.D. & James Saum, Ph.D.',
+                    role: 'Professors of Counseling, CSU Sacramento',
+                    era: '1969–1982',
+                    category: 'MENTORS',
+                    contact: '6000 J Street, Sacramento · (916) 454-6325',
+                    citation: 'SCAN 02 [P. 44] & SCAN 03 [P. 3, 9, 15]',
+                    quote: 'Guided John’s Master of Science in Counseling (3.78 GPA) and Humanist-Existential facilitation philosophy.',
+                    bio: 'John’s graduate mentors at Sacramento State who championed his career for years afterward as primary academic references.'
+                },
+                {
+                    name: 'Dr. Harold Eilersen, Steve Volmer & Marjorie Cupp',
+                    role: 'Clinical Psychology & Counseling Intern Supervisors',
+                    era: '1972–1973',
+                    category: 'MENTORS',
+                    contact: '3738 Walnut Ave, Carmichael & 2991 Land Park Dr, Sacramento',
+                    citation: 'SCAN 03 · P. 2, 3, 9, 11',
+                    quote: 'Supervised John’s fieldwork in School Psychology, Psychometry, and Junior High Counseling.',
+                    bio: 'Alongside Principal Dr. Stratis Zampathis at California Junior High School, they trained John in compassionate diagnostic testing and youth counseling.'
+                },
+                {
+                    name: 'Walter Slipe & William Danielson',
+                    role: 'City Manager & Personnel Director, City of Sacramento',
+                    era: '1971–1978',
+                    category: 'COLLEAGUES',
+                    contact: '915 I Street, Sacramento · (916) 449-5326',
+                    citation: 'SCAN 03 · P. 11, 17, 24, 39',
+                    quote: 'Entrusted John in his mid-20s with managing Sacramento’s 313-position Affirmative Action Youth Employment Program.',
+                    bio: 'Gave John his first major break in municipal personnel administration and executive grant leadership.'
+                },
+                {
+                    name: 'William R. Drennon',
+                    role: 'Principal, San Leandro Adult School',
+                    era: '1975–1982',
+                    category: 'COLLEAGUES',
+                    contact: '2200 Bancroft Ave, San Leandro · (415) 357-9911',
+                    citation: 'SCAN 01 [P. 11, 15] & SCAN 02 [P. 44]',
+                    quote: 'Appointed John to launch the Adult Career Guidance Center and serve as Evening Administrator (Acting Principal).',
+                    bio: 'Supported John’s innovative Humanist-Existential Encounter Groups, Self-Esteem classes, and Monday night counseling clinic.'
+                },
+                {
+                    name: 'Judi Antung, Antoinette Poulsen & Warren Witt',
+                    role: 'Adult Night-School Students in San Leandro',
+                    era: 'Winter 1977',
+                    category: 'STUDENTS & COMMUNITY',
+                    contact: 'San Leandro Adult School Library',
+                    citation: 'SCAN 01 · P. 12–18',
+                    quote: '“The tests brought to the surface inner feelings about career choices that have been buried for a long time... Thank you John for being who and what you are.”',
+                    bio: 'Working adults whose lives were changed by John’s career counseling, individual mock interviews, and encouragement—and who lobbied the principal for better mimeographs!'
+                },
+                {
+                    name: 'Rose Peters, Ken Bartell & Floydean Greenlow',
+                    role: 'Alameda County & Oakland Personnel Leaders',
+                    era: '1974–1985',
+                    category: 'COLLEAGUES',
+                    contact: '1221 Oak St & 1421 Washington St, Oakland',
+                    citation: 'SCAN 02 [P. 33, 44] & SCAN 03 [P. 3, 15]',
+                    quote: 'Collaborated closely with John on civil rights, EEO compliance, police/fire testing, and rebuilding post-Prop 13 county training.',
+                    bio: 'John’s close colleagues during his eight years in Oakland with Alameda County Personnel.'
+                }
+            ];
+
+            const sampleCourses = [
+                { code: 'PSY 1A', title: 'General Elementary Psychology', school: 'Sac City', term: 'Fall 1964', grade: 'B', cat: 'PSYCH' },
+                { code: 'SOC 140', title: 'Social Psychology', school: 'SF State', term: 'Spring 1966', grade: 'B', cat: 'PSYCH' },
+                { code: 'REC 132', title: 'Crafts for Recreation Leaders', school: 'SF State', term: 'Fall 1965', grade: 'B', cat: 'REC' },
+                { code: 'ART 001B', title: 'Art from Renaissance to Present', school: 'CSU Sacramento', term: 'Fall 1969', grade: 'A', cat: 'ARTS' },
+                { code: 'PSY 106', title: 'Experimental Psych: Motivation', school: 'CSU Sacramento', term: 'Spring 1970', grade: 'A', cat: 'PSYCH' },
+                { code: 'ART 171', title: 'American Art', school: 'CSU Sacramento', term: 'Spring 1970', grade: 'A', cat: 'ARTS' },
+                { code: 'PSY 120', title: 'Psychological Testing', school: 'CSU Sacramento', term: 'Spring 1970', grade: 'A', cat: 'PSYCH' },
+                { code: 'ED A 2730', title: 'Counseling Theory', school: 'CSUS Grad', term: 'Spring 1972', grade: 'A', cat: 'HONORS' },
+                { code: 'ED A 2770', title: 'Career & Life Style Development', school: 'CSUS Grad', term: 'Fall 1971', grade: 'A', cat: 'HONORS' },
+                { code: 'ED A 2750', title: 'Group Processes in Counseling', school: 'CSUS Grad', term: 'Spring 1972', grade: 'P', cat: 'HONORS' },
+                { code: 'EDUC X 351', title: 'Adult Education Principles', school: 'UC Berkeley Ext', term: 'Spring 1976', grade: 'A', cat: 'HONORS' },
+                { code: 'BUSMA 100', title: 'Communications & Management', school: 'Vista College', term: 'Spring 1982', grade: 'CR', cat: 'EXEC' },
+                { code: 'ALCO 1980', title: 'Windmills: Seminar on Disabled & EEO', school: 'Alameda County', term: '1974–1982', grade: 'CERT', cat: 'EXEC' },
+                { code: 'SMUD 1984', title: 'Organizational Culture & Appraisal', school: 'SMUD Training', term: '1984', grade: 'CERT', cat: 'EXEC' },
+                { code: 'SMUD 1985', title: 'Hay Job Evaluation & SIGMA Analysis', school: 'SMUD Training', term: '1985', grade: 'CERT', cat: 'EXEC' },
+                { code: 'ZINGER 96', title: 'Zenger-Miller Supervisory Coaching', school: 'Sacramento Courts', term: '1990–1996', grade: 'INSTR', cat: 'EXEC' }
+            ];
+
+            let state = {
+                activePersonaIdx: 0,
+                activeTimelineIdx: 4,
+                activeCompassIdx: 0,
+                activeImpactIdx: 0,
+                docSceneIdx: 0,
+                docIsPlaying: false,
+                docTimer: null,
+                docProgressInterval: null,
+                docSceneElapsed: 0,
+                docSceneDuration: 14000,
+                mapView: 'homes', // 'homes' | 'workplaces' | 'pink1976'
+                addressRegionFilter: 'ALL', // 'ALL' | 'SACRAMENTO' | 'BAY AREA' | 'MONTEREY'
+                selectedAddressIdx: 12, // Default spotlight on One Surf Way #237 or 1300 57th St
+                selectedPinkIdx: 0,
+                mentorCat: 'ALL',
+                courseCat: 'ALL',
+                courseSearch: ''
+            };
+
+            function renderDocumentaryStage() {
+                const sc = documentaryScenes[state.docSceneIdx];
+                const total = documentaryScenes.length;
+
+                document.getElementById('doc-scene-counter').textContent = `CHAPTER ${sc.num} OF ${total}`;
+                document.getElementById('doc-era-badge').textContent = `${sc.era} · ${sc.location}`;
+                document.getElementById('doc-age-pill').textContent = sc.ageLabel;
+                document.getElementById('doc-citation-pill').textContent = sc.citation;
+                document.getElementById('doc-chapter-kicker').textContent = `✦ ${sc.kicker}`;
+                document.getElementById('doc-touchstone-tag').textContent = sc.location.toUpperCase();
+                document.getElementById('doc-caption-text').textContent = sc.narration;
+                document.getElementById('doc-progress-fill').style.width = `${((state.docSceneIdx + 1) / total) * 100}%`;
+
+                document.getElementById('doc-play-icon').textContent = state.docIsPlaying ? '⏸' : '▶';
+                document.getElementById('doc-play-label').textContent = state.docIsPlaying ? 'Pause Film' : 'Play Documentary';
+                document.getElementById('doc-status-indicator').className = state.docIsPlaying
+                    ? 'w-2.5 h-2.5 rounded-full bg-gold animate-ping inline-block'
+                    : 'w-2.5 h-2.5 rounded-full bg-white/40 inline-block';
+                document.getElementById('doc-playback-hint').textContent = state.docIsPlaying
+                    ? `AUTO-ADVANCING (${Math.round(state.docSceneDuration / 1000)}S PER CHAPTER)`
+                    : 'PAUSED · READ AT YOUR OWN PACE OR CLICK PLAY';
+
+                // Update pace buttons
+                [18000, 14000, 9000].forEach(p => {
+                    const btn = document.getElementById(`pace-btn-${p}`);
+                    if (btn) {
+                        btn.className = state.docSceneDuration === p
+                            ? 'interactive-el px-3 py-1.5 rounded-xl bg-gold text-ink font-bold font-mono text-xs shadow'
+                            : 'interactive-el px-3 py-1.5 rounded-xl bg-white/10 border border-white/15 font-mono text-xs text-white/80 hover:text-white';
+                    }
+                });
+
+                document.getElementById('doc-visual-stage').innerHTML = `
+                    <div class="scene-transition grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                        <div class="lg:col-span-7 space-y-5">
+                            <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-gold/40 text-gold font-mono text-xs uppercase tracking-widest">
+                                <span>✦</span> ${sc.era} · ${sc.ageLabel}
+                            </div>
+                            <h3 class="font-serif text-3xl sm:text-5xl lg:text-[52px] text-white font-normal leading-[1.06] tracking-tight">
+                                ${sc.title}
+                            </h3>
+                            <blockquote class="p-4 sm:p-5 rounded-2xl bg-white/[0.06] border-l-4 border-gold space-y-1.5">
+                                <p class="font-serif italic text-lg sm:text-xl text-gold/95 leading-snug">${sc.quote}</p>
+                                <footer class="font-mono text-[11px] text-white/60">${sc.quoteSub}</footer>
+                            </blockquote>
+                            <div class="space-y-1.5 pt-1">
+                                <div class="font-mono text-[10px] uppercase tracking-widest text-white/50">Key Moments in This Chapter:</div>
+                                <ul class="grid grid-cols-1 gap-1.5 text-xs sm:text-sm text-white/85">
+                                    ${sc.moments.map(m => `
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-gold font-bold">✦</span>
+                                            <span>${m}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5">
+                            <div class="ken-burns-stage">
+                                ${sc.artifactHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                document.getElementById('doc-filmstrip-container').innerHTML = documentaryScenes.map((s, idx) => `
+                    <button type="button" data-action="doc-select-scene" data-index="${idx}"
+                        class="interactive-el p-2 rounded-lg border text-left transition-all ${
+                            idx === state.docSceneIdx
+                            ? 'bg-gold text-ink font-bold border-gold shadow-md -translate-y-0.5'
+                            : 'bg-white/5 text-white/70 border-white/10 hover:bg-white/10 hover:text-white'
+                        }">
+                        <div class="font-mono text-[10px] opacity-80">CH ${s.num}</div>
+                        <div class="font-serif text-xs font-bold truncate">${s.era.split('–')[0].trim()}</div>
+                    </button>
+                `).join('');
+            }
+
+            function clearSceneTimers() {
+                if (state.docTimer) {
+                    clearTimeout(state.docTimer);
+                    state.docTimer = null;
+                }
+                if (state.docProgressInterval) {
+                    clearInterval(state.docProgressInterval);
+                    state.docProgressInterval = null;
+                }
+                const bar = document.getElementById('doc-scene-timer-bar');
+                if (bar) bar.style.width = '0%';
+            }
+
+            function runCurrentScene() {
+                clearSceneTimers();
+                renderDocumentaryStage();
+                if (!state.docIsPlaying) return;
+
+                state.docSceneElapsed = 0;
+                const stepMs = 100;
+                const bar = document.getElementById('doc-scene-timer-bar');
+
+                state.docProgressInterval = setInterval(() => {
+                    if (!state.docIsPlaying) return;
+                    state.docSceneElapsed += stepMs;
+                    const pct = Math.min(100, (state.docSceneElapsed / state.docSceneDuration) * 100);
+                    if (bar) bar.style.width = `${pct}%`;
+                }, stepMs);
+
+                state.docTimer = setTimeout(() => {
+                    if (!state.docIsPlaying) return;
+                    if (state.docSceneIdx < documentaryScenes.length - 1) {
+                        state.docSceneIdx++;
+                        runCurrentScene();
+                    } else {
+                        state.docIsPlaying = false;
+                        clearSceneTimers();
+                        renderDocumentaryStage();
+                    }
+                }, state.docSceneDuration);
+            }
+
+            function toggleDoc() {
+                state.docIsPlaying = !state.docIsPlaying;
+                if (state.docIsPlaying) {
+                    runCurrentScene();
+                } else {
+                    clearSceneTimers();
+                    renderDocumentaryStage();
+                }
+            }
+
+            function renderPersonas() {
+                const grid = document.getElementById('persona-selector-grid');
+                const stage = document.getElementById('persona-stage');
+                if (!grid || !stage) return;
+
+                grid.innerHTML = personasData.map((p, idx) => `
+                    <button type="button" data-action="select-persona" data-index="${idx}"
+                        class="interactive-el text-left px-3 py-2 rounded-xl font-mono text-[11px] border ${idx === state.activePersonaIdx ? 'bg-ink text-paper font-bold border-ink' : 'bg-paper text-ink border-hairline'}">
+                        ${p.shortLabel}
+                    </button>
+                `).join('');
+
+                const p = personasData[state.activePersonaIdx];
+                stage.innerHTML = `
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="font-mono text-terracotta font-bold">${p.year}</span>
+                            <span class="citation-badge">${p.citation}</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-semibold text-ink">${p.title}</h3>
+                        <p class="font-mono text-xs text-sage font-bold">${p.subtitle}</p>
+                        <p class="text-xs text-ink/85 leading-relaxed pt-1">${p.description}</p>
+                    </div>
+                `;
+            }
+
+            function renderTimeline() {
+                const grid = document.getElementById('timeline-nodes-container');
+                const drawer = document.getElementById('timeline-drawer');
+                const counter = document.getElementById('timeline-counter');
+                if (!grid || !drawer) return;
+
+                counter.textContent = `${String(state.activeTimelineIdx + 1).padStart(2, '0')} / ${timelineData.length}`;
+                grid.innerHTML = timelineData.map((t, idx) => `
+                    <button type="button" data-action="select-timeline" data-index="${idx}"
+                        class="interactive-el p-2.5 rounded-xl border text-left text-xs ${idx === state.activeTimelineIdx ? 'bg-terracotta text-white font-bold border-terracotta' : 'bg-paper text-ink border-hairline'}">
+                        <div class="font-mono text-[10px] opacity-75">#${String(idx + 1).padStart(2, '0')}</div>
+                        <div class="font-serif font-bold truncate">${t.label.split('·')[0]}</div>
+                    </button>
+                `).join('');
+
+                const cur = timelineData[state.activeTimelineIdx];
+                drawer.innerHTML = `
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center border-b border-hairline pb-3">
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-1 rounded bg-ink text-paper font-mono text-xs font-bold">${cur.year}</span>
+                                <span class="font-mono text-xs text-sage font-bold uppercase">${cur.loc}</span>
+                            </div>
+                            <span class="citation-badge">${cur.cit}</span>
+                        </div>
+                        <h3 class="font-serif text-3xl text-ink">${cur.title}</h3>
+                        <p class="text-sm text-ink/90 leading-relaxed">${cur.text}</p>
+                    </div>
+                `;
+            }
+
+            function renderCompass() {
+                const list = document.getElementById('compass-steps-list');
+                const stage = document.getElementById('compass-step-stage');
+                if (!list || !stage) return;
+
+                list.innerHTML = compassStepsData.map((s, idx) => `
+                    <button type="button" data-action="select-compass" data-index="${idx}"
+                        class="interactive-el w-full text-left px-3.5 py-2.5 rounded-xl border text-xs font-mono flex justify-between ${idx === state.activeCompassIdx ? 'bg-ink text-paper font-bold border-ink' : 'bg-paper text-ink border-hairline'}">
+                        <span>${s.title}</span>
+                        <span class="${idx === state.activeCompassIdx ? 'text-gold' : 'text-terracotta'}">→</span>
+                    </button>
+                `).join('');
+
+                const cur = compassStepsData[state.activeCompassIdx];
+                stage.innerHTML = `
+                    <div class="space-y-4">
+                        <span class="font-mono text-xs uppercase text-terracotta font-bold">${cur.num} · 1996 Supervisory Seminar</span>
+                        <div class="p-3 bg-ink text-paper font-mono text-xs font-bold rounded-xl">
+                            SLIDE: “${cur.slide}”
+                        </div>
+                        <p class="font-hand text-2xl sm:text-3xl text-ink leading-relaxed">
+                            ${cur.note}
+                        </p>
+                    </div>
+                `;
+            }
+
+            function renderImpact() {
+                const tabs = document.getElementById('impact-tabs-container');
+                const stage = document.getElementById('impact-stage');
+                if (!tabs || !stage) return;
+
+                tabs.innerHTML = impactArtifacts.map((a, idx) => `
+                    <button type="button" data-action="select-impact" data-index="${idx}"
+                        class="interactive-el p-3 rounded-xl border text-left text-xs ${idx === state.activeImpactIdx ? 'bg-ink text-paper font-bold border-ink' : 'bg-card text-ink border-hairline'}">
+                        <div class="font-mono text-[10px] text-gold">${a.date}</div>
+                        <div class="font-serif font-bold mt-1">${a.title}</div>
+                    </button>
+                `).join('');
+
+                const cur = impactArtifacts[state.activeImpactIdx];
+                stage.innerHTML = `
+                    <div class="typewriter-page rounded-2xl p-6 sm:p-10 space-y-3">
+                        <div class="flex justify-between items-center border-b border-hairline pb-2">
+                            <span class="font-mono text-xs text-muted uppercase font-bold">${cur.head}</span>
+                            <span class="citation-badge">${cur.cit}</span>
+                        </div>
+                        <p class="text-sm sm:text-base text-ink/90 leading-relaxed">${cur.body}</p>
+                    </div>
+                `;
+            }
+
+            function renderMaps() {
+                const container = document.getElementById('maps-container');
+                if (!container) return;
+
+                // Update top view switcher tabs
+                ['homes', 'workplaces', 'pink1976'].forEach(v => {
+                    const tab = document.getElementById(`map-tab-${v}`);
+                    if (tab) {
+                        if (state.mapView === v) {
+                            tab.className = v === 'pink1976'
+                                ? 'interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase font-bold bg-magenta text-white shadow-sm'
+                                : 'interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase font-bold bg-ink text-paper shadow-sm';
+                        } else {
+                            tab.className = v === 'pink1976'
+                                ? 'interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase text-magenta font-bold hover:bg-magenta/10'
+                                : 'interactive-el px-3.5 py-2 rounded-xl font-mono text-xs uppercase text-muted hover:text-ink';
+                        }
+                    }
+                });
+
+                if (state.mapView === 'homes') {
+                    const filteredHomes = residentialAddresses.filter(a =>
+                        state.addressRegionFilter === 'ALL' || a.region === state.addressRegionFilter
+                    );
+                    const curHome = residentialAddresses[state.selectedAddressIdx] || residentialAddresses[0];
+
+                    container.innerHTML = `
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                            <!-- Left 5 Columns: Interactive California Address Map + Region Filter -->
+                            <div class="lg:col-span-5 bg-card border border-hairline rounded-2xl p-5 space-y-4 shadow-sm">
+                                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-hairline pb-3">
+                                    <div>
+                                        <span class="font-mono text-[10px] uppercase tracking-widest text-terracotta font-bold block">Interactive California Map</span>
+                                        <h3 class="font-serif text-2xl font-bold text-ink">Click Any Pin or Address Card</h3>
+                                    </div>
+                                    <span class="citation-badge">${residentialAddresses.length} ADDRESSES</span>
+                                </div>
+
+                                <!-- Region Filter Pills -->
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${[
+                                        { key: 'ALL', label: 'All Regions (14)' },
+                                        { key: 'SACRAMENTO', label: 'Sacramento (7)' },
+                                        { key: 'BAY AREA', label: 'East Bay / Martinez (6)' },
+                                        { key: 'MONTEREY', label: 'Monterey Coast (1)' }
+                                    ].map(r => `
+                                        <button type="button" data-action="filter-address-region" data-region="${r.key}"
+                                            class="interactive-el px-2.5 py-1 rounded-lg font-mono text-[11px] border ${
+                                                state.addressRegionFilter === r.key
+                                                ? 'bg-terracotta text-white border-terracotta font-bold'
+                                                : 'bg-paper text-ink border-hairline hover:bg-cardHover'
+                                            }">
+                                            ${r.label}
+                                        </button>
+                                    `).join('')}
+                                </div>
+
+                                <!-- Stylized SVG California & Regional Zoom Map -->
+                                <div class="relative w-full aspect-[4/4.3] bg-paper rounded-xl border border-hairline p-3 overflow-hidden">
+                                    <svg viewBox="0 0 340 390" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Subtle Lat/Long Grid -->
+                                        <g stroke="#E5DEC9" stroke-width="1" stroke-dasharray="3 3">
+                                            <line x1="0" y1="80" x2="340" y2="80"/>
+                                            <line x1="0" y1="160" x2="340" y2="160"/>
+                                            <line x1="0" y1="240" x2="340" y2="240"/>
+                                            <line x1="0" y1="320" x2="340" y2="320"/>
+                                            <line x1="90" y1="0" x2="90" y2="390"/>
+                                            <line x1="180" y1="0" x2="180" y2="390"/>
+                                            <line x1="270" y1="0" x2="270" y2="390"/>
+                                        </g>
+
+                                        <!-- California Coastline & Central Valley Silhouette -->
+                                        <path d="M 55 20 L 185 20 L 188 125 L 310 315 L 295 375 L 225 380 L 175 335 L 112 295 L 92 230 L 72 175 L 55 100 Z"
+                                              fill="#F2ECE1" stroke="#B8A98A" stroke-width="2.5" stroke-linejoin="round"/>
+
+                                        <!-- Sacramento River & SF Bay Water Accents -->
+                                        <path d="M 175 135 Q 150 175 108 202" fill="none" stroke="#4A6B5D" stroke-width="2" stroke-opacity="0.35"/>
+                                        <circle cx="105" cy="205" r="16" fill="#4A6B5D" fill-opacity="0.12"/>
+                                        <path d="M 105 285 Q 115 292 122 298" fill="none" stroke="#4A6B5D" stroke-width="3" stroke-opacity="0.4"/>
+
+                                        <!-- Trajectory Line Connecting Sacramento <-> East Bay <-> Monterey -->
+                                        <path d="M 132 185 L 168 148 L 112 202 L 106 208 L 122 210 L 184 154 L 116 292 L 180 150"
+                                              fill="none" stroke="#B84A39" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+
+                                        <!-- Region Callout Boxes -->
+                                        <g font-family="Courier Prime, monospace" font-size="9" font-weight="bold" fill="#1E1915">
+                                            <text x="198" y="148">SACRAMENTO (7 HOMES)</text>
+                                            <text x="20" y="198">EAST BAY (6 HOMES)</text>
+                                            <text x="130" y="296">MONTEREY (ONE SURF WAY)</text>
+                                        </g>
+
+                                        <!-- Clickable Pins for All 14 Residential Records -->
+                                        ${residentialAddresses.map((addr, idx) => {
+                                            const isSelected = idx === state.selectedAddressIdx;
+                                            const inFilter = state.addressRegionFilter === 'ALL' || addr.region === state.addressRegionFilter;
+                                            if (!inFilter) return '';
+                                            return `
+                                                <g class="interactive-el" data-action="select-home-address" data-index="${idx}">
+                                                    ${isSelected ? `<circle cx="${addr.cx}" cy="${addr.cy}" r="15" fill="#B84A39" opacity="0.28"/>` : ''}
+                                                    <circle cx="${addr.cx}" cy="${addr.cy}" r="${isSelected ? 7.5 : 5}"
+                                                        fill="${isSelected ? '#B84A39' : '#1E1915'}" stroke="#FAF6EE" stroke-width="1.8"/>
+                                                </g>
+                                            `;
+                                        }).join('')}
+                                    </svg>
+                                </div>
+
+                                <!-- Note on 57th Street Returning Theme -->
+                                <div class="p-3.5 rounded-xl bg-goldLight border border-gold/50 text-xs text-ink">
+                                    <strong class="font-mono uppercase text-[10px] text-terracottaDark block mb-0.5">✦ Curatorial Discovery: His Return to East Sacramento</strong>
+                                    Notice how John came full circle: he lived at <strong>2632 57th St.</strong> in grad school (1971–73), returned to <strong>1300 57th St.</strong> while at SMUD (1983–87), and lived just blocks away at <strong>5413 “E” St.</strong> in the 1990s!
+                                </div>
+                            </div>
+
+                            <!-- Right 7 Columns: Active Address Spotlight + Complete Clickable Street Directory -->
+                            <div class="lg:col-span-7 space-y-5">
+                                <!-- Spotlight Dossier Card -->
+                                <div class="typewriter-page rounded-2xl p-6 sm:p-8 pl-10 border-2 border-terracotta/50 shadow-md space-y-3">
+                                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-hairline pb-2.5">
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2.5 py-0.5 rounded bg-terracotta text-white font-mono text-xs font-bold">ADDRESS #${curHome.num}</span>
+                                            <span class="font-mono text-xs font-bold text-ink">${curHome.era}</span>
+                                            <span class="px-2 py-0.5 rounded bg-card font-mono text-[10px] text-sage font-bold">${curHome.region}</span>
+                                        </div>
+                                        <span class="citation-badge">${curHome.citation}</span>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight">${curHome.street}</h3>
+                                        <div class="flex flex-wrap items-center gap-4 mt-1 font-mono text-xs text-muted">
+                                            <span>📍 ${curHome.city}</span>
+                                            <span>☎️ ${curHome.phone}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-3 rounded-xl bg-card border-l-4 border-sage font-mono text-xs text-ink">
+                                        <strong>ROLE AT THIS ADDRESS:</strong> ${curHome.roleAtTime}
+                                    </div>
+
+                                    <p class="text-sm sm:text-base text-ink/90 leading-relaxed">${curHome.story}</p>
+                                </div>
+
+                                <!-- Scrollable / Clickable Grid of All 14 Residential Records -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                    ${filteredHomes.map((addr) => {
+                                        const realIdx = residentialAddresses.indexOf(addr);
+                                        const active = realIdx === state.selectedAddressIdx;
+                                        return `
+                                            <button type="button" data-action="select-home-address" data-index="${realIdx}"
+                                                class="interactive-el text-left p-3.5 rounded-xl border transition-all flex flex-col justify-between ${
+                                                    active
+                                                    ? 'bg-ink text-paper border-ink shadow-md -translate-y-0.5'
+                                                    : 'bg-card text-ink border-hairline hover:bg-cardHover'
+                                                }">
+                                                <div class="flex items-center justify-between font-mono text-[10px] mb-1">
+                                                    <span class="font-bold ${active ? 'text-gold' : 'text-terracotta'}">#${addr.num} · ${addr.era}</span>
+                                                    <span class="opacity-75">${addr.city.split(',')[0]}</span>
+                                                </div>
+                                                <div class="font-serif text-lg font-bold leading-snug truncate">${addr.street}</div>
+                                                <div class="font-mono text-[10px] mt-1 truncate ${active ? 'text-white/75' : 'text-muted'}">
+                                                    ${addr.roleAtTime}
+                                                </div>
+                                            </button>
+                                        `;
+                                    }).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else if (state.mapView === 'workplaces') {
+                    container.innerHTML = `
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            ${workplacesList.map(w => `
+                                <div class="p-5 rounded-2xl bg-card border border-hairline flex flex-col justify-between space-y-3 hover:border-terracotta transition-all">
+                                    <div>
+                                        <div class="flex items-center justify-between gap-2 mb-1.5">
+                                            <span class="px-2.5 py-0.5 rounded bg-ink text-gold font-mono text-xs font-bold">${w.era}</span>
+                                            <span class="citation-badge">${w.citation}</span>
+                                        </div>
+                                        <h3 class="font-serif text-2xl font-bold text-ink">${w.name}</h3>
+                                        <p class="font-mono text-xs text-terracotta font-bold mt-0.5">📍 ${w.address}</p>
+                                        <p class="text-xs sm:text-sm text-ink/85 leading-relaxed mt-2">${w.desc}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                } else {
+                    // VINTAGE 1976/1977 PINK SAN LEANDRO BROCHURE MAP
+                    const curPink = pinkBrochureSites[state.selectedPinkIdx] || pinkBrochureSites[0];
+                    container.innerHTML = `
+                        <div class="rounded-2xl bg-[#E87A82] border-2 border-ink p-6 sm:p-8 text-ink shadow-xl">
+                            <div class="flex flex-wrap items-center justify-between gap-4 border-b-2 border-ink pb-4 mb-6">
+                                <div>
+                                    <span class="font-mono text-xs uppercase tracking-widest bg-ink text-[#E87A82] px-2.5 py-1 rounded font-bold">
+                                        Scan 01 · Pages 11 & 34 Back-Cover Reconstruction
+                                    </span>
+                                    <h3 class="font-serif text-3xl sm:text-4xl text-ink font-bold mt-2">
+                                        1976–1977 San Leandro Adult Education Street Map
+                                    </h3>
+                                </div>
+                                <button type="button" data-action="set-map-view" data-view="homes"
+                                    class="interactive-el px-3.5 py-2 rounded-xl bg-ink text-paper font-mono text-xs uppercase hover:bg-terracotta">
+                                    ← Back to 12 Residential Addresses
+                                </button>
+                            </div>
+
+                            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                                <div class="lg:col-span-7 bg-[#E26871] border-2 border-ink rounded-xl p-4 shadow-inner">
+                                    <svg viewBox="0 0 430 370" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke="#1E1915" stroke-linecap="round" fill="none">
+                                            <path d="M 25 70 Q 150 28 395 12" stroke-width="4.5"/>
+                                            <path d="M 30 78 Q 150 36 400 20" stroke-width="4.5"/>
+                                            <text x="115" y="32" class="font-mono text-[9px] fill-ink font-bold" stroke="none">MAC ARTHUR FREEWAY</text>
+                                            <path d="M 45 332 Q 200 292 395 296" stroke-width="4.5"/>
+                                            <path d="M 50 342 Q 200 302 395 306" stroke-width="4.5"/>
+                                            <text x="135" y="334" class="font-mono text-[9px] fill-ink font-bold" stroke="none">NIMITZ FREEWAY</text>
+                                            <path d="M 55 148 Q 210 132 390 105" stroke-width="3.2"/>
+                                            <text x="180" y="122" class="font-mono text-[8px] fill-ink font-bold" stroke="none">BANCROFT AVE.</text>
+                                            <path d="M 75 215 Q 220 205 370 132" stroke-width="3"/>
+                                            <line x1="95" y1="82" x2="95" y2="215" stroke-width="2.5"/>
+                                            <line x1="164" y1="72" x2="174" y2="295" stroke-width="2.5"/>
+                                            <line x1="258" y1="72" x2="268" y2="255" stroke-width="2.5"/>
+                                            <line x1="308" y1="165" x2="318" y2="338" stroke-width="2.5"/>
+                                            <rect x="166" y="255" width="32" height="15" stroke-width="2.2" fill="#E87A82"/>
+                                            <text x="155" y="282" class="font-mono text-[8px] fill-ink font-bold" stroke="none">BART STATION</text>
+                                        </g>
+                                        ${pinkBrochureSites.map((s, idx) => {
+                                            const active = idx === state.selectedPinkIdx;
+                                            return `
+                                                <g class="interactive-el" data-action="select-pink-site" data-index="${idx}">
+                                                    <circle cx="${s.cx}" cy="${s.cy}" r="${active ? 12 : 9.5}"
+                                                        fill="${active ? '#FAF6EE' : '#1E1915'}" stroke="#1E1915" stroke-width="2"/>
+                                                    <text x="${s.cx}" y="${s.cy + 3.5}" text-anchor="middle"
+                                                        class="font-mono text-[10px] font-bold" fill="${active ? '#1E1915' : '#FAF6EE'}">${s.num}</text>
+                                                </g>
+                                            `;
+                                        }).join('')}
+                                    </svg>
+                                </div>
+                                <div class="lg:col-span-5 space-y-4">
+                                    <div class="bg-paper border-2 border-ink rounded-xl p-5 shadow-md">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="px-2.5 py-0.5 rounded bg-ink text-paper font-mono text-xs font-bold">SITE #${curPink.num}</span>
+                                            <span class="citation-badge">SCAN 01 · P. 11 & 34</span>
+                                        </div>
+                                        <h4 class="font-serif text-2xl font-bold text-ink">${curPink.name}</h4>
+                                        <p class="font-mono text-xs text-terracotta font-bold mt-0.5">📍 ${curPink.address}, San Leandro</p>
+                                        <p class="text-xs sm:text-sm text-ink/90 leading-relaxed mt-3">${curPink.note}</p>
+                                    </div>
+                                    <div class="bg-[#F4A2A8] border-2 border-ink rounded-xl p-3 max-h-60 overflow-y-auto space-y-1">
+                                        ${pinkBrochureSites.map((s, idx) => `
+                                            <button type="button" data-action="select-pink-site" data-index="${idx}"
+                                                class="interactive-el w-full text-left px-3 py-1.5 rounded-lg font-mono text-xs flex justify-between ${
+                                                    idx === state.selectedPinkIdx ? 'bg-ink text-paper font-bold' : 'hover:bg-white/40 text-ink'
+                                                }">
+                                                <span class="truncate pr-2">${s.num}. ${s.name}</span>
+                                                <span class="text-[10px] opacity-80 shrink-0">${s.address}</span>
+                                            </button>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            function renderMentors() {
+                const filterBar = document.getElementById('mentor-filter-bar');
+                const grid = document.getElementById('mentors-grid');
+                if (!filterBar || !grid) return;
+
+                const cats = ['ALL', 'FAMILY & YOUTH', 'MENTORS', 'COLLEAGUES', 'STUDENTS & COMMUNITY'];
+                filterBar.innerHTML = cats.map(c => `
+                    <button type="button" data-action="filter-mentor-cat" data-cat="${c}"
+                        class="interactive-el px-3 py-1.5 rounded-xl font-mono text-xs border ${
+                            state.mentorCat === c ? 'bg-sage text-white font-bold border-sage' : 'bg-paper text-ink border-hairline hover:bg-card'
+                        }">
+                        ${c}
+                    </button>
+                `).join('');
+
+                const filtered = circleOfLives.filter(m => state.mentorCat === 'ALL' || m.category === state.mentorCat);
+                grid.innerHTML = filtered.map(m => `
+                    <div class="p-5 rounded-2xl bg-paper border border-hairline shadow-sm flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-card text-terracotta font-bold">${m.era}</span>
+                                <span class="citation-badge">${m.citation}</span>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-ink leading-snug">${m.name}</h3>
+                            <p class="font-mono text-xs text-sage font-bold">${m.role}</p>
+                            <p class="text-xs text-ink/85 leading-relaxed">${m.bio}</p>
+                        </div>
+                        <div class="pt-3 border-t border-hairline space-y-1.5">
+                            <p class="font-serif italic text-sm text-ink/90">“${m.quote}”</p>
+                            <div class="font-mono text-[10px] text-muted">📍 ${m.contact}</div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            function renderCourses() {
+                const filterBar = document.getElementById('course-filter-bar');
+                const grid = document.getElementById('courses-cards-grid');
+                if (!filterBar || !grid) return;
+
+                const cats = ['ALL', 'PSYCH', 'HONORS', 'EXEC', 'ARTS', 'REC'];
+                filterBar.innerHTML = cats.map(c => `
+                    <button type="button" data-action="filter-course-cat" data-cat="${c}"
+                        class="interactive-el px-3 py-1.5 rounded-xl font-mono text-xs border ${state.courseCat === c ? 'bg-ink text-paper font-bold border-ink' : 'bg-paper text-ink border-hairline'}">
+                        ${c === 'EXEC' ? 'EXEC & HR SEMINARS' : c}
+                    </button>
+                `).join('');
+
+                const filtered = sampleCourses.filter(c => {
+                    const matchCat = state.courseCat === 'ALL' || c.cat === state.courseCat;
+                    const matchQuery = !state.courseSearch || c.title.toLowerCase().includes(state.courseSearch.toLowerCase()) || c.code.toLowerCase().includes(state.courseSearch.toLowerCase());
+                    return matchCat && matchQuery;
+                });
+
+                grid.innerHTML = filtered.map(c => `
+                    <div class="p-4 rounded-xl bg-paper border border-hairline flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center text-xs font-mono mb-1">
+                                <span class="font-bold text-terracotta">${c.code}</span>
+                                <span class="text-muted">${c.term}</span>
+                            </div>
+                            <h4 class="font-serif text-lg font-semibold text-ink">${c.title}</h4>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-hairline flex justify-between items-center font-mono text-xs">
+                            <span class="text-muted">${c.school}</span>
+                            <span class="px-2 py-0.5 rounded bg-card font-bold">Grade: ${c.grade}</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            function handleGlobalClick(e) {
+                const trigger = e.target.closest('[data-action]');
+                if (!trigger) return;
+                const action = trigger.getAttribute('data-action');
+
+                switch (action) {
+                    case 'scroll-section': {
+                        e.preventDefault();
+                        const target = document.getElementById(trigger.getAttribute('data-target'));
+                        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        break;
+                    }
+                    case 'start-documentary-jump': {
+                        e.preventDefault();
+                        const docEl = document.getElementById('module-documentary');
+                        if (docEl) docEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        if (!state.docIsPlaying) {
+                            state.docIsPlaying = true;
+                            runCurrentScene();
+                        }
+                        break;
+                    }
+                    case 'doc-play-toggle':
+                        toggleDoc();
+                        break;
+                    case 'doc-prev':
+                        state.docSceneIdx = (state.docSceneIdx - 1 + documentaryScenes.length) % documentaryScenes.length;
+                        if (state.docIsPlaying) runCurrentScene(); else renderDocumentaryStage();
+                        break;
+                    case 'doc-next':
+                        state.docSceneIdx = (state.docSceneIdx + 1) % documentaryScenes.length;
+                        if (state.docIsPlaying) runCurrentScene(); else renderDocumentaryStage();
+                        break;
+                    case 'doc-select-scene':
+                        state.docSceneIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        if (state.docIsPlaying) runCurrentScene(); else renderDocumentaryStage();
+                        break;
+                    case 'doc-restart':
+                        state.docSceneIdx = 0;
+                        state.docIsPlaying = true;
+                        runCurrentScene();
+                        break;
+                    case 'set-doc-pace':
+                        state.docSceneDuration = parseInt(trigger.getAttribute('data-pace'), 10);
+                        if (state.docIsPlaying) runCurrentScene(); else renderDocumentaryStage();
+                        break;
+                    case 'select-persona':
+                        state.activePersonaIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        renderPersonas();
+                        break;
+                    case 'select-timeline':
+                        state.activeTimelineIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        renderTimeline();
+                        break;
+                    case 'timeline-step': {
+                        const dir = parseInt(trigger.getAttribute('data-dir'), 10);
+                        state.activeTimelineIdx = (state.activeTimelineIdx + dir + timelineData.length) % timelineData.length;
+                        renderTimeline();
+                        break;
+                    }
+                    case 'select-compass':
+                        state.activeCompassIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        renderCompass();
+                        break;
+                    case 'select-impact':
+                        state.activeImpactIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        renderImpact();
+                        break;
+                    case 'set-map-view':
+                        state.mapView = trigger.getAttribute('data-view');
+                        renderMaps();
+                        break;
+                    case 'filter-address-region':
+                        state.addressRegionFilter = trigger.getAttribute('data-region');
+                        renderMaps();
+                        break;
+                    case 'select-home-address':
+                        state.selectedAddressIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        renderMaps();
+                        break;
+                    case 'select-pink-site':
+                        state.selectedPinkIdx = parseInt(trigger.getAttribute('data-index'), 10);
+                        renderMaps();
+                        break;
+                    case 'filter-mentor-cat':
+                        state.mentorCat = trigger.getAttribute('data-cat');
+                        renderMentors();
+                        break;
+                    case 'filter-course-cat':
+                        state.courseCat = trigger.getAttribute('data-cat');
+                        renderCourses();
+                        break;
+                    case 'open-modal': {
+                        const m = document.getElementById(trigger.getAttribute('data-modal'));
+                        if (m) m.classList.remove('hidden');
+                        break;
+                    }
+                    case 'close-modal': {
+                        const m = document.getElementById(trigger.getAttribute('data-modal'));
+                        if (m) m.classList.add('hidden');
+                        break;
+                    }
+                }
+            }
+
+            function init() {
+                renderPersonas();
+                renderDocumentaryStage();
+                renderTimeline();
+                renderCompass();
+                renderImpact();
+                renderMaps();
+                renderMentors();
+                renderCourses();
+
+                document.body.addEventListener('click', handleGlobalClick);
+
+                const search = document.getElementById('course-search-input');
+                if (search) {
+                    search.addEventListener('input', function(e) {
+                        state.courseSearch = e.target.value;
+                        renderCourses();
+                    });
+                }
+
+                window.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        const modal = document.getElementById('jana-modal');
+                        if (modal) modal.classList.add('hidden');
+                    }
+                });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+</body>
+</html>
